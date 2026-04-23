@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Sushi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="" href="logo.png">
+</head>
+<body>
+<header>
+    <nav>
+          <div class="left-side">
+        <img id="navlogo" src="logo.png" alt="website logo">
+        <span id="nametext">Royal Sushi</span>
+    </div>
+     <ul>
+            <li class="buttons"><a href="index.html">Menu</a></li>
+            <li class="buttons"><a href="aboutus.html">About Us</a></li>
+            <li class="buttons"><a href="tel:+995511232338">Contact Us</a></li>
+    </ul>
+    </nav>
+</header>
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide"><img src="shrimp maki.webp" alt=""></div>
+        <div class="slide"><img src="shrimp nigri.webp" alt=""></div>
+        <div class="slide"><img src="salmon maki.webp" alt=""></div>
+        <div class="slide"><img src="salmon nigri.webp" alt=""></div>
+        <div class="slide"><img src="eel maki.webp" alt=""></div>
+        <div class="slide"><img src="eel nigri.webp" alt=""></div>
+        
+        <div class="slide"><img src="shrimp maki.webp" alt=""></div>
+        <div class="slide"><img src="shrimp nigri.webp" alt=""></div>
+        <div class="slide"><img src="salmon maki.webp" alt=""></div>
+        <div class="slide"><img src="salmon nigri.webp" alt=""></div>
+        <div class="slide"><img src="eel maki.webp" alt=""></div>
+        <div class="slide"><img src="eel nigri.webp" alt=""></div>
+    </div>
+</div>
+<section class="category-section">
+    <h2 class="section-title">Categories</h2>
+    <div class="category-grid">
+        <div class="category-card" onclick="toggleMenu('sashimi-menu')">
+            <div class="category-image">
+                <img src="sashimi.webp" alt="Sashimi">
+            </div>
+            <span class="category-name">SASHIMI</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('nigiri-menu')">
+            <div class="category-image">
+                <img src="nigiri.webp" alt="Nigiri">
+            </div>
+            <span class="category-name">NIGIRI</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('maki-menu')">
+            <div class="category-image">
+                <img src="maki.webp" alt="maki">
+            </div>
+            <span class="category-name">MAKI</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('roll-menu')">
+            <div class="category-image">
+                <img src="roll.webp" alt="roll">
+            </div>
+            <span class="category-name">ROLL</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('hotroll-menu')">
+            <div class="category-image">
+                <img src="hot  roll.webp" alt="hotroll">
+            </div>
+            <span class="category-name">HOT ROLL</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('set-menu')">
+            <div class="category-image">
+                <img src="set.webp" alt="set">
+            </div>
+            <span class="category-name">SET</span>
+        </div>
+
+         <div class="category-card" onclick="toggleMenu('sushiburger-menu')">
+            <div class="category-image">
+                <img src="sushiburger.webp" alt="sushiburger">
+            </div>
+            <span class="category-name">SUSHI BURGER</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('wine-menu')">
+            <div class="category-image">
+                <img src="wine.jpg" alt="wine">
+            </div>
+            <span class="category-name">WINE</span>
+        </div>
+
+         <div class="category-card" onclick="toggleMenu('nonalcoholicdrinks-menu')">
+            <div class="category-image">
+                <img src="non alcoholic drinks.jpg" alt="non-alcoholicdrinks">
+            </div>
+            <span class="category-name">NON-ALCOHOLIC DRINKS</span>
+        </div>
+        
+        <div class="category-card" onclick="toggleMenu('japanesedrinks-menu')">
+            <div class="category-image">
+                <img src="japanese drinks.webp" alt="japanese drinks">
+            </div>
+            <span class="category-name">JAPANESE DRINKS</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('coffee-menu')">
+            <div class="category-image">
+                <img src="coffee.jpg" alt="coffee">
+            </div>
+            <span class="category-name">COFFEE</span>
+        </div>
+        </div>
+
+    <div id="sashimi-menu" class="sub-menu-container">
+    <h3>SASHIMI SUSHI</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon sashimi.webp" alt="salmon sashimi">
+            <div class="item-info">
+                <h3>SALMON SASHIMI</h3>
+                <p class="description">Fresh salmon</p>
+                <div class="order-container">
+                    <span class="price">37.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp sashimi.png" alt="shrimp sashimi">
+            <div class="item-info">
+                <h3>SHRIMP SASHIMI</h3>
+                <div class="order-container">
+                    <span class="price">39.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel sashimi.webp" alt="EEL Sashimi">
+            <div class="item-info">
+                <h3>EEL SASHIMI</h3>
+                <p class="description">Eel, rice, teriyaki, sesame</p>
+                <div class="order-container">
+                    <span class="price">42.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="tuna sashimi.webp" alt="tuna Sashimi">
+            <div class="item-info">
+                <h3>TUNA SASHIMI</h3>
+                <div class="order-container">
+                    <span class="price">38.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <div id="nigiri-menu" class="sub-menu-container">
+    <h3>NIGIRI SUSHI</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon nigiri.webp" alt="salmon nigiri">
+            <div class="item-info">
+                <h3>SALMON NIGIRI</h3>
+                <p class="description">Fresh salmon, rice, wasabi</p>
+                <div class="order-container">
+                    <span class="price">13.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp nigri.webp" alt="shrimp nigiri">
+            <div class="item-info">
+                <h3>SHRIMP NIGIRI</h3>
+                <p class="description">King prawn, rice, wasabi</p>
+                <div class="order-container">
+                    <span class="price">14.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel nigri.webp" alt="eel nigiri">
+            <div class="item-info">
+                <h3>EEL NIGIRI</h3>
+                <p class="description">Eel, rice, teriyaki, sesame</p>
+                <div class="order-container">
+                    <span class="price">15.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="tuna nigri.webp" alt="tuna nigiri">
+            <div class="item-info">
+                <h3>TUNA NIGIRI</h3>
+                <p class="description">Tuna, rice, ginger</p>
+                <div class="order-container">
+                    <span class="price">13.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <div id="maki-menu" class="sub-menu-container">
+    <h3>MAKI</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon maki.webp" alt="salmon maki">
+            <div class="item-info">
+                <h3>SALMON MAKI</h3>
+                <p class="description">Fresh Salmon, rice, nori, wasabi</p>
+                <div class="order-container">
+                    <span class="price">17.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp maki.webp" alt="shrimp maki">
+            <div class="item-info">
+                <h3>SHRIMP MAKI</h3>
+                <p class="description">King Shrimp, rice, nori</p>
+                <div class="order-container">
+                    <span class="price">18.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel maki.webp" alt="eel maki">
+            <div class="item-info">
+                <h3>EEL MAKI</h3>
+                <p class="description">Eel, rice, teriyaki, sesame, nori</p>
+                <div class="order-container">
+                    <span class="price">19.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="" alt="caviar maki">
+            <div class="item-info">
+                <h3>CAVIAR MAKI</h3>
+                <p class="description">Rice, nori, cream cheese, cucumber, caviar, teriyaki</p>
+                <div class="order-container">
+                    <span class="price">20.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="" alt="crabs maki">
+            <div class="item-info">
+                <h3>CRABS MAKI</h3>
+                <p class="description">Rice, nori, crab mix, teriyaki, spice sauce, sesame</p>
+                <div class="order-container">
+                    <span class="price">16.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="avocado maki.webp" alt="avocado maki">
+            <div class="item-info">
+                <h3>AVOCADO MAKI</h3>
+                <p class="description">Avocado, rice, nori</p>
+                <div class="order-container">
+                    <span class="price">12.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="cucumber maki.webp" alt="cucumber maki">
+            <div class="item-info">
+                <h3>CUCUMBER MAKI</h3>
+                <p class="description">Cucumer, rice, nori</p>
+                <div class="order-container">
+                    <span class="price">11.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="tuna maki.webp" alt="tuna maki">
+            <div class="item-info">
+                <h3>TUNA MAKI</h3>
+                <p class="description">Tuna, rice, nori, teriyaki</p>
+                <div class="order-container">
+                    <span class="price">17.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="roll-menu" class="sub-menu-container">
+    <h3>ROLL</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="roll of the chef.png" alt="Roll of the Chef">
+            <div class="item-info">
+                <h3>ROLL OF THE CHEF</h3>
+                <p class="description">Rice, nori, breaded salmon, cream cheese, salmon, avocado, caviar, mango sauce, teriyaki sauce</p>
+                <div class="order-container">
+                    <span class="price">53.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="royal roll.webp" alt="Royal Roll">
+            <div class="item-info">
+                <h3>ROYAL ROLL</h3>
+                <p class="description">rice, nori, salmon, breaded shrimp, caviar, avocado, mango sauce, teriyaki sauce</p>
+                <div class="order-container">
+                    <span class="price">49.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="caviar roll.webp" alt="Caviar Roll">
+            <div class="item-info">
+                <h3>CAVIAR ROLL</h3>
+                <p class="description">Salmon caviar, cream cheese, rice, nori, salmon, avocado</p>
+                <div class="order-container">
+                    <span class="price">47.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="philadelphia roll.webp" alt="Philadelphia Roll">
+            <div class="item-info">
+                <h3>PHILADELPHIA ROLL</h3>
+                <p class="description">Fresh salmon, rice, nori, cream cheese, avocado, teriyaki, sesame</p>
+                <div class="order-container">
+                    <span class="price">30.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="salmon california.webp" alt="Salmon California">
+            <div class="item-info">
+                <h3>SALMON CALIFORNIA</h3>
+                <p class="description">rice, nori, cream cheese, salmon, cucumber, avocado, tobiko, teriyaki</p>
+                <div class="order-container">
+                    <span class="price">32.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="california with shrimp.png" alt="California with Shrimp">
+            <div class="item-info">
+                <h3>CALIFORNIA WITH SHRIMP</h3>
+                <p class="description">Rice, nori, shrimp, tobiko, avocado, cucumber, spice sauce, teriyaki sauce, sesame mix.</p>
+                <div class="order-container">
+                    <span class="price">34.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="california with eel.webp" alt="California with Eel">
+            <div class="item-info">
+                <h3>CALIFORNIA WITH EEL</h3>
+                <p class="description">Rice, nori, tobiko, eel, cream cheese, avocado, cucumber, mango sauce, teriyaki sauce, sesame mix.</p>
+                <div class="order-container">
+                    <span class="price">37.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="sakura roll.webp" alt="Sakura Roll">
+            <div class="item-info">
+                <h3>SAKURA ROLL</h3>
+                <p class="description">rice, nori, cream cheese, salmon, pickled onion, cucumber, tobiko, caviar, spice sauce, teriyaki, sesame</p>
+                <div class="order-container">
+                    <span class="price">37.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="golden sensei.webp" alt="Golden Sensei">
+            <div class="item-info">
+                <h3>GOLDEN SENSEI</h3>
+                <p class="description">Eel, rice, nori, cream cheese, salmon, avocado, teriyaki, sesame</p>
+                <div class="order-container">
+                    <span class="price">39.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="black dragon.webp" alt="Black Dragon">
+            <div class="item-info">
+                <h3>BLACK DRAGON</h3>
+                <p class="description">Eel, rice, nori, shrimp, cream cheese, avocado, teriyaki, sesame</p>
+                <div class="order-container">
+                    <span class="price">39.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red dragon.png" alt="Red Dragon">
+            <div class="item-info">
+                <h3>RED DRAGON</h3>
+                <p class="description">Rice, nori, eel, salmon, cream cheese, avocado, teriyaki sauce, mango sauce, sesame mix</p>
+                <div class="order-container">
+                    <span class="price">39.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="white sensei.webp" alt="White Sensei">
+            <div class="item-info">
+                <h3>WHITE SENSEI</h3>
+                <p class="description">rice, nori, cream cheese, eel, avocado, shrimp, teriyaki</p>
+                <div class="order-container">
+                    <span class="price">39.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel roll.webp" alt="Eel Roll">
+            <div class="item-info">
+                <h3>EEL ROLL</h3>
+                <p class="description">Eel, rice, nori, cream cheese, cucumber, avocado, teriyaki, sesame, mango sauce</p>
+                <div class="order-container">
+                    <span class="price">44.5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="vegetables light roll.png" alt="Vegetables Light Roll">
+            <div class="item-info">
+                <h3>VEGETABLES LIGHT ROLL</h3>
+                <p class="description">Rice, nori, cucumber, carrots, avocados, green Bulgarian, Teriyaki sauce, sesame</p>
+                <div class="order-container">
+                    <span class="price">25.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="vegetables green roll.png" alt="Vegetables Green Roll">
+            <div class="item-info">
+                <h3>VEGETABLES GREEN ROLL</h3>
+                <p class="description">Rice, nori, cream cheese, cucumber, avocado, green Bulgarian, green onion, spice sauce, teriyaki sauce, sesame</p>
+                <div class="order-container">
+                    <span class="price">27.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="vegetables royal roll.png" alt="Vegetables Royal Roll">
+            <div class="item-info">
+                <h3>VEGETABLES ROYAL ROLL</h3>
+                <p class="description">Rice, nori, avocado, cucumber, cream cheese, carrots, red Bulgarian, green onions, mango sauce, teriyaki sauce, sesame</p>
+                <div class="order-container">
+                    <span class="price">29.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="hotroll-menu" class="sub-menu-container">
+    <h3>HOT ROLL</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="hot salmon roll.webp" alt="Hot Salmon Roll">
+            <div class="item-info">
+                <h3>HOT SALMON ROLL</h3>
+                <p class="description">Rice, nori, cream cheese, avocado, salmon, cucumber, teriyaki, spicy sauce, sesame</p>
+                <div class="order-container">
+                    <span class="price">33.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Hot Shrimp Roll">
+            <div class="item-info">
+                <h3>HOT SHRIMP ROLL</h3>
+                <p class="description">rice, nori, cream cheese, shrimp, avocado, cucumber, spice sauce, teriyaki, sesame</p>
+                <div class="order-container">
+                    <span class="price">34.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="hot eel roll.webp" alt="Hot Eel Roll">
+            <div class="item-info">
+                <h3>HOT EEL ROLL</h3>
+                <p class="description">Rice, nori, cream cheese, avocado, eel, cucumber, teriyaki, mango sauce, sesame</p>
+                <div class="order-container">
+                    <span class="price">35.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Hot Royal Roll">
+            <div class="item-info">
+                <h3>HOT ROYAL ROLL</h3>
+                <p class="description">rice, nori, cream cheese, salmon, eel, avocado, cucumber, mango sauce, avocado sauce, teriyaki</p>
+                <div class="order-container">
+                    <span class="price">38.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="hot tuna roll.webp" alt="Hot Tuna Roll">
+            <div class="item-info">
+                <h3>HOT TUNA ROLL</h3>
+                <p class="description">Rice, nori, tuna, avocado, cucumber, mango sauce, spicy sauce, teriyaki sauce, sesame</p>
+                <div class="order-container">
+                    <span class="price">33.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="set-menu" class="sub-menu-container">
+    <h3>SET</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="hot set.webp" alt="Hot Set">
+            <div class="item-info">
+                <h3>HOT SET</h3>
+                <p class="description">Hot salmon roll, hot eel roll, hot shrimp roll, hot royal roll</p>
+                <div class="order-container">
+                    <span class="price">104.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="royal set small.webp" alt="Royal Set Small">
+            <div class="item-info">
+                <h3>ROYAL SET SMALL</h3>
+                <p class="description">Philadelphia roll, California roll, eel maki, salmon maki, avocado maki</p>
+                <div class="order-container">
+                    <span class="price">97.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Royal Set Big">
+            <div class="item-info">
+                <h3>ROYAL SET BIG</h3>
+                <p class="description">Hot Salmon Roll, Hot Shrimp Roll, Philadelphia Roll, Black Dragon Roll, Salmon California Roll, Salmon Maki, Eel Maki, Shrimp Maki, Crab Maki, Avocado Maki</p>
+                <div class="order-container">
+                    <span class="price">166.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="sushiburger-menu" class="sub-menu-container">
+    <h3>SUSHI BURGER</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon burger.webp" alt="Salmon Burger">
+            <div class="item-info">
+                <h3>SALMON BURGER</h3>
+                <p class="description">Salmon, caviar, rice, nori, cream cheese, cucumber, avocado, spice sauce, mango sauce, teriyaki, sesame mix</p>
+                <div class="order-container">
+                    <span class="price">38.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp eel tuna burger.webp" alt="Shrimp Burger">
+            <div class="item-info">
+                <h3>SHRIMP BURGER</h3>
+                <p class="description">Shrimp, rice, nori, cream cheese, cucumber, avocado, spice sauce, mango sauce, teriyaki sauce, sesame mix</p>
+                <div class="order-container">
+                    <span class="price">39.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp eel tuna burger.webp" alt="Eel Burger">
+            <div class="item-info">
+                <h3>EEL BURGER</h3>
+                <p class="description">Eel, rice, nori, cream cheese, cucumber, avocado, spice sauce, mango sauce, teriyaki sauce, sesame mix</p>
+                <div class="order-container">
+                    <span class="price">40.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp eel tuna burger.webp" alt="Tuna Burger">
+            <div class="item-info">
+                <h3>TUNA BURGER</h3>
+                <p class="description">Tuna, rice, nori, cucumber, avocado, spice sauce, mango sauce, teriyaki sauce, sesame mix</p>
+                <div class="order-container">
+                    <span class="price">37.9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="wine-menu" class="sub-menu-container">
+    <h3>WINE</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="tsinandeli.webp" alt="Tsinandali">
+            <div class="item-info">
+                <h3>TSINANDALI</h3>
+                <div class="order-container">
+                    <span class="price">7 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="mukuzani.webp" alt="Mukuzani">
+            <div class="item-info">
+                <h3>MUKUZANI</h3>
+                <div class="order-container">
+                    <span class="price">9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="saperavi.webp" alt="Saperavi">
+            <div class="item-info">
+                <h3>SAPERAVI</h3>
+                <div class="order-container">
+                    <span class="price">8 GEL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="nonalcoholicdrinks-menu" class="sub-menu-container">
+    <h3>NON-ALCOHOLIC DRINKS</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="still water.webp" alt="Still Water">
+            <div class="item-info">
+                <h3>STILL WATER</h3>
+                <div class="order-container">
+                    <span class="price">4 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="nabeglavi.webp" alt="Nabeglavi">
+            <div class="item-info">
+                <h3>NABEGLAVI</h3>
+                <div class="order-container">
+                    <span class="price">4 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="coca cola.webp" alt="Coca Cola">
+            <div class="item-info">
+                <h3>COCA COLA</h3>
+                <div class="order-container">
+                    <span class="price">4 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="fanta.jpg" alt="Fanta">
+            <div class="item-info">
+                <h3>FANTA</h3>
+                <div class="order-container">
+                    <span class="price">4 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="sprite.webp" alt="Sprite">
+            <div class="item-info">
+                <h3>SPRITE</h3>
+                <div class="order-container">
+                    <span class="price">4 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="cherry.webp" alt="Cherry Juice">
+            <div class="item-info">
+                <h3>CHERRY</h3>
+                <div class="order-container">
+                    <span class="price">5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="apple.webp" alt="Apple Juice">
+            <div class="item-info">
+                <h3>APPLE</h3>
+                <div class="order-container">
+                    <span class="price">5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="peach.webp" alt="Peach">
+            <div class="item-info">
+                <h3>PEACH</h3>
+                <div class="order-container">
+                    <span class="price">5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="orange.webp" alt="Orange juice">
+            <div class="item-info">
+                <h3>ORANGE</h3>
+                <div class="order-container">
+                    <span class="price">5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pineapple.webp" alt="Pineapple juice">
+            <div class="item-info">
+                <h3>PINEAPPLE JUICE</h3>
+                <div class="order-container">
+                    <span class="price">5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pomegranate juice.webp" alt="Pomegranate juice">
+            <div class="item-info">
+                <h3>POMEGRANATE JUICE</h3>
+                <div class="order-container">
+                    <span class="price">5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red bull energy drink.webp" alt="red bull energydrink">
+            <div class="item-info">
+                <h3> RED BULL  ENERGY DRINK</h3>
+                <div class="order-container">
+                    <span class="price">9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red bull sugarfree.webp" alt="red bull sugarfree">
+            <div class="item-info">
+                <h3>RED BULL SUGARFREE</h3>
+                <div class="order-container">
+                    <span class="price">9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red bull tropical.jpg" alt="red bull tropical">
+            <div class="item-info">
+                <h3>RED BULL TROPICAL</h3>
+                <div class="order-container">
+                    <span class="price">9 GEL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="japanesedrinks-menu" class="sub-menu-container">
+    <h3>JAPANESE DRINKS</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="soju.webp" alt="Soju">
+            <div class="item-info">
+                <h3>SOJU</h3>
+                <div class="order-container">
+                    <span class="price">29 GEL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="coffee-menu" class="sub-menu-container">
+    <h3>COFFEE</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="espresso.jpg" alt="Espresso">
+            <div class="item-info">
+                <h3>ESPRESSO</h3>
+                <div class="order-container">
+                    <span class="price">5 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="cappucchino.jpg" alt="Cappuccino">
+            <div class="item-info">
+                <h3>CAPPUCCINO</h3>
+                <div class="order-container">
+                    <span class="price">7 GEL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="americano.jpg" alt="Americano">
+            <div class="item-info">
+                <h3>AMERICANO</h3>
+                <div class="order-container">
+                    <span class="price">6 GEL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<script>
+    function toggleMenu(menuId) {
+        // ყველა სხვა მენიუს დახურვა
+        document.querySelectorAll('.sub-menu-container').forEach(menu => {
+            if(menu.id !== menuId) menu.classList.remove('active');
+        });
+        
+        // არჩეული მენიუს გამოჩენა/დამალვა
+        const selectedMenu = document.getElementById(menuId);
+        selectedMenu.classList.toggle('active');
+        
+        // გვერდის ოდნავ ჩამოწევა მენიუზე
+        if(selectedMenu.classList.contains('active')) {
+            setTimeout(() => {
+                selectedMenu.scrollIntoView({ behavior: 'smooth' });
+            }, 200);
+        }
+    }
+</script>
+        
+    </body>
+</html>
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p><strong>მისამართი:</strong> ბათუმი, ირაკლი აბაშიძის 4</p>
+            <p><strong>ტელეფონი:</strong> <a href="tel:+995511232338">+995 511 23 23 38</a></p>
+        </div>
+
+        <div class="footer-socials">
+            <p>გვიპოვეთ სოციალურ ქსელებში:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1DxDAYt733/" class="icon-link"><img src="facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/royalsushi.batumi?igsh=NnRmcGJia2F6bmFh" class="icon-link"><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g297576-d33263121-Reviews-Royal_Sushi_Batumi-Batumi_Adjara_Region.html" class="icon-link"><img src="tripadvisor.png" alt="Tripadvisor"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Royal Sushi. ყველა უფლება დაცულია.</p>
+    </div>
+</footer>
