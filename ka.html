@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Sushi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+<header>
+    <nav>
+    <div class="left-side">
+        <img id="navlogo" src="logo.png" alt="website logo">
+        <span id="nametext">Royal Sushi</span>
+    </div>
+
+    <ul>
+        <li class="buttons"><a href="index.html">Menu</a></li>
+        <li class="buttons"><a href="aboutus.html">About Us</a></li>
+        <li class="buttons"><a href="tel:+995511232338">Contact Us</a></li>
+        
+        <li class="buttons dropdown">
+    
+    <div class="lang-dropdown">
+    <a href="index.html" class="lang-item">
+        <img src="https://flagcdn.com/w40/gb.png" alt="English Flag" class="flag-icon">
+        <span>EN</span>
+    </a>
+    
+    <a href="ka.html" class="lang-item">
+        <img src="https://flagcdn.com/w40/ge.png" alt="Georgian Flag" class="flag-icon">
+        <span>KA</span>
+    </a>
+    
+    <a href="ru.html" class="lang-item">
+        <img src="https://flagcdn.com/w40/ru.png" alt="Russian Flag" class="flag-icon">
+        <span>RU</span>
+    </a>
+</div>
+</li>
+    </ul>
+</nav>
+</header>
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide"><img src="shrimp maki.webp" alt=""></div>
+        <div class="slide"><img src="shrimp nigri.webp" alt=""></div>
+        <div class="slide"><img src="salmon maki.webp" alt=""></div>
+        <div class="slide"><img src="salmon nigri.webp" alt=""></div>
+        <div class="slide"><img src="eel maki.webp" alt=""></div>
+        <div class="slide"><img src="eel nigri.webp" alt=""></div>
+        
+        <div class="slide"><img src="shrimp maki.webp" alt=""></div>
+        <div class="slide"><img src="shrimp nigri.webp" alt=""></div>
+        <div class="slide"><img src="salmon maki.webp" alt=""></div>
+        <div class="slide"><img src="salmon nigri.webp" alt=""></div>
+        <div class="slide"><img src="eel maki.webp" alt=""></div>
+        <div class="slide"><img src="eel nigri.webp" alt=""></div>
+    </div>
+</div>
+
+<section class="category-section">
+    <h2 class="section-title">კატეგორიები</h2>
+    <div class="category-grid">
+        <div class="category-card" onclick="toggleMenu('sashimi-menu')">
+            <div class="category-image">
+                <img src="sashimi.webp" alt="საშიმი">
+            </div>
+            <span class="category-name">საშიმი</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('nigiri-menu')">
+            <div class="category-image">
+                <img src="nigiri.webp" alt="ნიგირი">
+            </div>
+            <span class="category-name">ნიგირი</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('gunkan-menu')">
+            <div class="category-image">
+                <img src="gunkan.png" alt="გუნკანი">
+            </div>
+            <span class="category-name">გუნკანი</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('maki-menu')">
+            <div class="category-image">
+                <img src="maki.webp" alt="მაკი">
+            </div>
+            <span class="category-name">მაკი</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('roll-menu')">
+            <div class="category-image">
+                <img src="roll.webp" alt="როლი">
+            </div>
+            <span class="category-name">როლი</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('hotroll-menu')">
+            <div class="category-image">
+                <img src="hot  roll.webp" alt="ცხელი როლი">
+            </div>
+            <span class="category-name">ცხელი როლი</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('asiansnack-menu')">
+            <div class="category-image">
+                <img src="asian snack.png" alt="აზიური სნექი">
+            </div>
+            <span class="category-name">აზიური სნექი</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('noodles-menu')">
+            <div class="category-image">
+                <img src="noodles.png" alt="ატრია">
+            </div>
+            <span class="category-name">ატრია / ნუდელსი</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('set-menu')">
+            <div class="category-image">
+                <img src="set.webp" alt="სეტი">
+            </div>
+            <span class="category-name">სეტი</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('sushiburger-menu')">
+            <div class="category-image">
+                <img src="sushiburger.webp" alt="სუში ბურგერი">
+            </div>
+            <span class="category-name">სუში ბურგერი</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('wine-menu')">
+            <div class="category-image">
+                <img src="wine.jpg" alt="ღვინო">
+            </div>
+            <span class="category-name">ღვინო</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('nonalcoholicdrinks-menu')">
+            <div class="category-image">
+                <img src="non alcoholic drinks.jpg" alt="უალკოჰოლო სასმელები">
+            </div>
+            <span class="category-name">უალკოჰოლო სასმელები</span>
+        </div>
+        
+        <div class="category-card" onclick="toggleMenu('japanesedrinks-menu')">
+            <div class="category-image">
+                <img src="japanese drinks.webp" alt="იაპონური სასმელები">
+            </div>
+            <span class="category-name">იაპონური სასმელები</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('coffee-menu')">
+            <div class="category-image">
+                <img src="coffee.jpg" alt="ყავა">
+            </div>
+            <span class="category-name">ყავა</span>
+        </div>
+    </div>
+
+    <div id="sashimi-menu" class="sub-menu-container">
+    <h3>საშიმი</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon sashimi.webp" alt="ორაგულის საშიმი">
+            <div class="item-info">
+                <h3>ორაგულის საშიმი</h3>
+                <p class="description">ფრეში ორაგული</p>
+                <div class="order-container">
+                    <span class="price">37.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp sashimi.png" alt="კრევეტის საშიმი">
+            <div class="item-info">
+                <h3>კრევეტის საშიმი</h3>
+                <div class="order-container">
+                    <span class="price">39.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel sashimi.webp" alt="გველთევზას საშიმი">
+            <div class="item-info">
+                <h3>გველთევზას საშიმი</h3>
+                <p class="description">გველთევზა, ბრინჯი, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">42.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="tuna sashimi.webp" alt="თინუსის საშიმი">
+            <div class="item-info">
+                <h3>თინუსის საშიმი</h3>
+                <div class="order-container">
+                    <span class="price">38.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="nigiri-menu" class="sub-menu-container">
+    <h3>ნიგირი</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon nigiri.webp" alt="ორაგულის ნიგირი">
+            <div class="item-info">
+                <h3>ორაგულის ნიგირი</h3>
+                <p class="description">ორაგული, ბრინჯი, ვასაბი</p>
+                <div class="order-container">
+                    <span class="price">13.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp nigri.webp" alt="კრევეტის ნიგირი">
+            <div class="item-info">
+                <h3>კრევეტის ნიგირი</h3>
+                <p class="description">სამეფო კრევეტი, ბრინჯი, ვასაბი</p>
+                <div class="order-container">
+                    <span class="price">14.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel nigri.webp" alt="გველთევზას ნიგირი">
+            <div class="item-info">
+                <h3>გველთევზას ნიგირი</h3>
+                <p class="description">გველთევზა, ბრინჯი, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">15.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="tuna nigri.webp" alt="თინუსის ნიგირი">
+            <div class="item-info">
+                <h3>თინუსის ნიგირი</h3>
+                <p class="description">თინუსი, ბრინჯი, ჯინჯერი</p>
+                <div class="order-container">
+                    <span class="price">13.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="maki-menu" class="sub-menu-container">
+    <h3>მაკი</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon maki.webp" alt="ორაგულის მაკი">
+            <div class="item-info">
+                <h3>ორაგულის მაკი</h3>
+                <p class="description">ფრეში ორაგული, ბრინჯი, ნორი, ვასაბი</p>
+                <div class="order-container">
+                    <span class="price">17.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp maki.webp" alt="კრევეტის მაკი">
+            <div class="item-info">
+                <h3>კრევეტის მაკი</h3>
+                <p class="description">სამეფო კრევეტი, ბრინჯი, ნორი</p>
+                <div class="order-container">
+                    <span class="price">18.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel maki.webp" alt="გველთევზას მაკი">
+            <div class="item-info">
+                <h3>გველთევზას მაკი</h3>
+                <p class="description">გველთევზა, ბრინჯი, ტერიაკი, სეზამი, ნორი</p>
+                <div class="order-container">
+                    <span class="price">19.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="ხიზილალის მაკი">
+            <div class="item-info">
+                <h3>ხიზილალის მაკი</h3>
+                <p class="description">ბრინჯი, ნორი, კრემყველი, კიტრი, ხიზილალა, ტერიაკი</p>
+                <div class="order-container">
+                    <span class="price">20.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="კრაბის მაკი">
+            <div class="item-info">
+                <h3>კრაბის მაკი</h3>
+                <p class="description">ბრინჯი, ნორი, კრაბის მიქსი, ტერიაკი, სპაის სოუსი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">16.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="avocado maki.webp" alt="ავოკადოს მაკი">
+            <div class="item-info">
+                <h3>ავოკადოს მაკი</h3>
+                <p class="description">ავოკადო, ბრინჯი, ნორი</p>
+                <div class="order-container">
+                    <span class="price">12.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="cucumber maki.webp" alt="კიტრი მაკი">
+            <div class="item-info">
+                <h3>კიტრი მაკი</h3>
+                <p class="description">კიტრი, ბრინჯი, ნორი</p>
+                <div class="order-container">
+                    <span class="price">11.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="tuna maki.webp" alt="თინუსის მაკი">
+            <div class="item-info">
+                <h3>თინუსის მაკი</h3>
+                <p class="description">თინუსი, ბრინჯი, ნორი, ტერიაკი</p>
+                <div class="order-container">
+                    <span class="price">17.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="roll-menu" class="sub-menu-container">
+    <h3>როლები</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="roll of the chef.png" alt="შეფის როლი">
+            <div class="item-info">
+                <h3>შეფის როლი</h3>
+                <p class="description">ბრინჯი, ნორი, პანირებული ორაგული, კრემყველი, ორაგული, ავოკადო, ხიზილალა, მანგოს სოუსი, ტერიაკის სოუსი</p>
+                <div class="order-container">
+                    <span class="price">53.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="royal roll.webp" alt="როიალ როლი">
+            <div class="item-info">
+                <h3>როიალ როლი</h3>
+                <p class="description">ბრინჯი, ნორი, ორაგული, პანირებული კრევეტი, ხიზილალა, ავოკადო, მანგოს სოუსი, ტერიაკის სოუსი</p>
+                <div class="order-container">
+                    <span class="price">49.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="caviar roll.webp" alt="ხიზილალის როლი">
+            <div class="item-info">
+                <h3>კავიარ როლი</h3>
+                <p class="description">ორაგულის ხიზილალა, კრემყველი, ბრინჯი, ნორი, ორაგული, ავოკადო</p>
+                <div class="order-container">
+                    <span class="price">47.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="philadelphia roll.webp" alt="ფილადელფია">
+            <div class="item-info">
+                <h3>ფილადელფია როლი</h3>
+                <p class="description">ფრეში ორაგული, ბრინჯი, ნორი, კრემყველი, ავოკადო, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">30.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="salmon california.webp" alt="ორაგულის კალიფორნია">
+            <div class="item-info">
+                <h3>ორაგულის კალიფორნია</h3>
+                <p class="description">ბრინჯი, ნორი, კრემყველი, ორაგული, კიტრი, ავოკადო, ტობიკო, მანგოს სოუსი, ტერიაკი</p>
+                <div class="order-container">
+                    <span class="price">32.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="california with shrimp.png" alt="კალიფორნია კრვეტით">
+            <div class="item-info">
+                <h3>კალიფორნია კრვეტით</h3>
+                <p class="description">ბრინჯი, ნორი, კრევეტი, ტობიკო, ავოკადო, კიტრი, სპაის სოუსი, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">34.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="california with eel.webp" alt="კალიფორნია გველთევზათი">
+            <div class="item-info">
+                <h3>კალიფორნია გველთევზით</h3>
+                <p class="description">ბრინჯი, ნორი, ტობიკო, გველთევზა, კრემყველი, ავოკადო, კიტრი, მანგოს სოუსი, ტერიაკის სოუსი, სეზამის მიქსი</p>
+                <div class="order-container">
+                    <span class="price">37.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="sakura roll.webp" alt="საკურა როლი">
+            <div class="item-info">
+                <h3>საკურა როლი</h3>
+                <p class="description">ბრინჯი, ნორი, კრემყველი, ორაგული, კიტრი, ტობიკო, ხიზილალა, სპაისი, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">37.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="golden sensei.webp" alt="გოლდენ სენსეი">
+            <div class="item-info">
+                <h3>ოქროს სენსეი</h3>
+                <p class="description">გველთევზა, ბრინჯი, ნორი, კრემყველი, ორაგული, ავოკადო, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">39.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="black dragon.webp" alt="შავი დრაკონი">
+            <div class="item-info">
+                <h3>შავი დრაკონი</h3>
+                <p class="description">გველთევზა, ბრინჯი, ნორი, კრევეტი, კრემყველი, ავოკადო, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">39.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red dragon.png" alt="წითელი დრაკონი">
+            <div class="item-info">
+                <h3>წითელი დრაკონი</h3>
+                <p class="description">ბრინჯი, ნორი, გველთევზა, ორაგული, კრემყველი, ავოკადო, ტერიაკი, მანგოს სოუსი, სეზამის მიქსი</p>
+                <div class="order-container">
+                    <span class="price">39.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="white sensei.webp" alt="ვაით სენსეი">
+            <div class="item-info">
+                <h3>თეთრი სენსეი</h3>
+                <p class="description">ბრინჯი, ნორი, კრემყველი, გველთევზა, ავოკადო, კრევეტი, ტერიაკი, მანგოს სოუსი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">39.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel roll.webp" alt="გველთევზას როლი">
+            <div class="item-info">
+                <h3>გველთევზას როლი</h3>
+                <p class="description">გველთევზა, ბრინჯი, ნორი, კრემ-ყველი, კიტრი, ავოკადო, ტერიაკი, სეზამი, მანგოს სოუსი</p>
+                <div class="order-container">
+                    <span class="price">44.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="vegetables light roll.png" alt="ბოსტნეულის ლაით როლი">
+            <div class="item-info">
+                <h3>ვეჯი ლაით როლი</h3>
+                <p class="description">ბრინჯი, ნორი, კიტრი, სტაფილო, ავოკადო, მწვანე, ბულგარული, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">25.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="vegetables green roll.png" alt="ბოსტნეულის მწვანე როლი">
+            <div class="item-info">
+                <h3>ვეჯი მწვანე როლი</h3>
+                <p class="description">ბრინჯი, ნორი, კრემყველი, კიტრი, ავოკადო, მწვანე ბულგარული, მწვანე ხახვი, ტერიაკის სოუსი, სეზამი, სპაის სოუსი</p>
+                <div class="order-container">
+                    <span class="price">27.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="vegetables royal roll.png" alt="ბოსტნეულის როიალ როლი">
+            <div class="item-info">
+                <h3>ვეჯი როიალ როლი</h3>
+                <p class="description">ბრინჯი, ნორი, ავოკადო, კიტრი, კრემყველი, სტაფილო, წითელი ბულგარული, მწვანე ხახვი, მანგოს სოუსი, ტერიაკის სოუსი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">29.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="hotroll-menu" class="sub-menu-container">
+    <h3>ცხელი როლები</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="hot salmon roll.webp" alt="ცხელი ორაგულის როლი">
+            <div class="item-info">
+                <h3>ცხელი ორაგულის როლი</h3>
+                <p class="description">ბრინჯი, ნორი, კრემყველი, ავოკადო, ორაგული, კიტრი, ტერიაკი, სპაის სოუსი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">33.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="ცხელი კრევეტის როლი">
+            <div class="item-info">
+                <h3>ცხელი კრევეტის როლი</h3>
+                <p class="description">ბრინჯი, ნორი, კრემყველი, კრევეტი, ავოკადო, კიტრი, სპაის სოუსი, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">34.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="hot eel roll.webp" alt="ცხელი გველთევზას როლი">
+            <div class="item-info">
+                <h3>ცხელი გველთევზას როლი</h3>
+                <p class="description">ბრინჯი, ნორი, კრემყველი, ავოკადო, გველთევზა, კიტრი, ტერიაკი, მანგოს სოუსი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">35.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="ცხელი როიალ როლი">
+            <div class="item-info">
+                <h3>ცხელი როიალ როლი</h3>
+                <p class="description">ბრინჯი, ნორი, კრემყველი, ორაგული, გველთევზა, ავოკადო, კიტრი, მანგოს სოუსი, ტერიაკის სოუსი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">38.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="hot tuna roll.webp" alt="ცხელი თინუსის როლი">
+            <div class="item-info">
+                <h3>ცხელი თინუსის როლი</h3>
+                <p class="description">ბრინჯი, ნორი, თინუსი, ავოკადო, კიტრი, მანგოს სოუსი, სპაის სოუსი, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">33.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="set-menu" class="sub-menu-container">
+    <h3>სეტები</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="hot set.webp" alt="ცხელი სეტი">
+            <div class="item-info">
+                <h3>ცხელი სეტი</h3>
+                <p class="description">ცხელი ორაგულის როლი, ცხელი გველთევზას როლი, ცხელი კრევეტის როლი, ცხელი როიალ როლი</p>
+                <div class="order-container">
+                    <span class="price">104.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="royal set small.webp" alt="პატარა როიალ სეტი">
+            <div class="item-info">
+                <h3>პატარა როიალ სეტი</h3>
+                <p class="description">ფილადელფია, კალიფორნია, გველთევზას მაკი, ორაგულის მაკი, ავოკადოს მაკი</p>
+                <div class="order-container">
+                    <span class="price">97.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="დიდი როიალ სეტი">
+            <div class="item-info">
+                <h3>დიდი როიალ სეტი</h3>
+                <p class="description">ცხელი ორაგულის როლი, ცხელი კრევეტის როლი, ფილადელფია, შავი დრაკონი, ორაგულის კალიფორნია, ორაგულის მაკი, გველთევზას მაკი, კრევეტის მაკი, კრაბის მაკი, ავოკადოს მაკი</p>
+                <div class="order-container">
+                    <span class="price">166.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="sushiburger-menu" class="sub-menu-container">
+    <h3>სუშის ბურგერი</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon burger.webp" alt="ორაგულის ბურგერი">
+            <div class="item-info">
+                <h3>ორაგულის ბურგერი</h3>
+                <p class="description">ორაგული, ხიზილალა, ბრინჯი, ნორი, კრემყველი, კიტრი, ავოკადო, ცხარე სოუსი, მანგოს სოუსი, ტერიაკის სოუსი, სეზამის მიქსი</p>
+                <div class="order-container">
+                    <span class="price">38.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp eel tuna burger.webp" alt="კრევეტის ბურგერი">
+            <div class="item-info">
+                <h3>კრევეტის ბურგერი</h3>
+                <p class="description">კრევეტი, ბრინჯი, ნორი, კრემ-ყველი, კიტრი, ავოკადო, ცხარე სოუსი, მანგოს სოუსი, ტერიაკის სოუსი, სეზამის მიქსი</p>
+                <div class="order-container">
+                    <span class="price">39.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp eel tuna burger.webp" alt="გველთევზას ბურგერი">
+            <div class="item-info">
+                <h3>გველთევზას ბურგერი</h3>
+                <p class="description">გველთევზა, ბრინჯი, ნორი, კრემყველი, კიტრი, ავოკადო, სპაის სოუსი, მანგოს სოუსი, ტერიაკის სოუსი, სეზამის მიქსი</p>
+                <div class="order-container">
+                    <span class="price">40.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp eel tuna burger.webp" alt="თინუსის ბურგერი">
+            <div class="item-info">
+                <h3>თინუსის ბურგერი</h3>
+                <p class="description">თინუსი, ბრინჯი, ნორი, კიტრი, ავოკადო, ცხარე სოუსი, მანგოს სოუსი, ტერიაკის სოუსი, სეზამის მიქსი</p>
+                <div class="order-container">
+                    <span class="price">37.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="wine-menu" class="sub-menu-container">
+    <h3>ღვინო</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="tsinandeli.webp" alt="წინანდალი">
+            <div class="item-info">
+                <h3>წინანდალი</h3>
+                <div class="order-container">
+                    <span class="price">7 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="mukuzani.webp" alt="მუკუზანი">
+            <div class="item-info">
+                <h3>მუკუზანი</h3>
+                <div class="order-container">
+                    <span class="price">9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="saperavi.webp" alt="საფერავი">
+            <div class="item-info">
+                <h3>საფერავი</h3>
+                <div class="order-container">
+                    <span class="price">8 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="nonalcoholicdrinks-menu" class="sub-menu-container">
+    <h3>უალკოჰოლო სასმელები</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="still water.webp" alt="წყალი">
+            <div class="item-info">
+                <h3>წყალი</h3>
+                <div class="order-container">
+                    <span class="price">4 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="nabeglavi.webp" alt="ნაბეღლავი">
+            <div class="item-info">
+                <h3>ნაბეღლავი</h3>
+                <div class="order-container">
+                    <span class="price">4 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="coca cola.webp" alt="კოკა-კოლა">
+            <div class="item-info">
+                <h3>კოკა-კოლა</h3>
+                <div class="order-container">
+                    <span class="price">4 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="fanta.jpg" alt="ფანტა">
+            <div class="item-info">
+                <h3>ფანტა</h3>
+                <div class="order-container">
+                    <span class="price">4 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="sprite.webp" alt="სპრაიტი">
+            <div class="item-info">
+                <h3>სპრაიტი</h3>
+                <div class="order-container">
+                    <span class="price">4 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="cherry.webp" alt="ალუბლის წვენი">
+            <div class="item-info">
+                <h3>ალუბალი</h3>
+                <div class="order-container">
+                    <span class="price">5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="apple.webp" alt="ვაშლის წვენი">
+            <div class="item-info">
+                <h3>ვაშლი</h3>
+                <div class="order-container">
+                    <span class="price">5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="peach.webp" alt="ატმის წვენი">
+            <div class="item-info">
+                <h3>ატამი</h3>
+                <div class="order-container">
+                    <span class="price">5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="orange.webp" alt="ფორთოხლის წვენი">
+            <div class="item-info">
+                <h3>ფორთოხალი</h3>
+                <div class="order-container">
+                    <span class="price">5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pineapple.webp" alt="ანანასის წვენი">
+            <div class="item-info">
+                <h3>ანანასის წვენი</h3>
+                <div class="order-container">
+                    <span class="price">5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pomegranate juice.webp" alt="ბროწეულის წვენი">
+            <div class="item-info">
+                <h3>ბროწეულის წვენი</h3>
+                <div class="order-container">
+                    <span class="price">5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red bull energy drink.webp" alt="რედ ბული">
+            <div class="item-info">
+                <h3>RED BULL ენერგეტიკული</h3>
+                <div class="order-container">
+                    <span class="price">9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red bull sugarfree.webp" alt="რედ ბული უშაქრო">
+            <div class="item-info">
+                <h3>RED BULL უშაქრო</h3>
+                <div class="order-container">
+                    <span class="price">9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red bull tropical.jpg" alt="რედ ბული ტროპიკალი">
+            <div class="item-info">
+                <h3>RED BULL ტროპიკული</h3>
+                <div class="order-container">
+                    <span class="price">9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="japanesedrinks-menu" class="sub-menu-container">
+    <h3>იაპონური სასმელები</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="soju.webp" alt="სოჯუ">
+            <div class="item-info">
+                <h3>სოჯუ</h3>
+                <div class="order-container">
+                    <span class="price">29 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="coffee-menu" class="sub-menu-container">
+    <h3>ყავა</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="espresso.jpg" alt="ესპრესო">
+            <div class="item-info">
+                <h3>ესპრესო</h3>
+                <div class="order-container">
+                    <span class="price">5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="cappucchino.jpg" alt="კაპუჩინო">
+            <div class="item-info">
+                <h3>კაპუჩინო</h3>
+                <div class="order-container">
+                    <span class="price">7 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="americano.jpg" alt="ამერიკანო">
+            <div class="item-info">
+                <h3>ამერიკანო</h3>
+                <div class="order-container">
+                    <span class="price">6 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="gunkan-menu" class="sub-menu-container">
+    <h3>გუნკანი</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon gunkan.png" alt="ორაგულის გუნკანი">
+            <div class="item-info">
+                <h3>ორაგულის გუნკანი</h3>
+                <p class="description">ფრეში ორაგული, ბრინჯი, ნორი, ხიზილალა, კრემყველი</p>
+                <div class="order-container">
+                    <span class="price">14.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp gunkan.png" alt="კრევეტის გუნკანი">
+            <div class="item-info">
+                <h3>კრევეტის გუნკანი</h3>
+                <p class="description">კრევეტი, ბრინჯი, ნორი, სპაის სოუსი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">13.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel gunkan.png" alt="გველთევზას გუნკანი">
+            <div class="item-info">
+                <h3>გველთევზას გუნკანი</h3>
+                <p class="description">გველთევზა, ბრინჯი, ნორი, კრემყველი, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">15.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="ხიზილალის გუნკანი">
+            <div class="item-info">
+                <h3>ხიზილალის გუნკანი</h3>
+                <p class="description">ბრინჯი, ნორი, კრემყველი, ხიზილალა, ტერიაკი</p>
+                <div class="order-container">
+                    <span class="price">16.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="ტობიკო გუნკანი">
+            <div class="item-info">
+                <h3>ტობიკო გუნკანი</h3>
+                <p class="description">ბრინჯი, ნორი, ტობიკო, სპაის სოუსი, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">12.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="tuna gunkan.png" alt="თინუსის გუნკანი">
+            <div class="item-info">
+                <h3>თინუსის გუნკანი</h3>
+                <p class="description">თინუსი, ბრინჯი, ნორი, სპაის სოუსი, ტერიაკი, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">13.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="asiansnack-menu" class="sub-menu-container">
+    <h3>აზიური სნექი</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon tempura.png" alt="ორაგულის ტემპურა">
+            <div class="item-info">
+                <h3>ორაგულის ტემპურა</h3>
+                <p class="description">პანირებული ორაგული</p>
+                <div class="order-container">
+                    <span class="price">30.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp tempura.png" alt="კრევეტის ტემპურა">
+            <div class="item-info">
+                <h3>კრევეტის ტემპურა</h3>
+                <p class="description">პანირებული კრევეტი</p>
+                <div class="order-container">
+                    <span class="price">32.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp gyoza.png" alt="კრევეტის გიოზა">
+            <div class="item-info">
+                <h3>კრევეტის გიოზა</h3>
+                <p class="description">გიოზას ცომი, კრევეტი, დაშინა მოტო, ოხრახუში</p>
+                <div class="order-container">
+                    <span class="price">25.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="chicken gioza.png" alt="ქათმის გიოზა">
+            <div class="item-info">
+                <h3>ქათმის გიოზა</h3>
+                <p class="description">გიოზას ცომი, ქათმის ხორცი, დაშინა მოტო, ოხრახუში</p>
+                <div class="order-container">
+                    <span class="price">23.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="hiashi salad.png" alt="ჰიაში სალათი">
+            <div class="item-info">
+                <h3>ჰიაში სალათი</h3>
+                <p class="description">წყალმცენარე ჰიაში, თხილის სოუსი, ფორთოხალი, სეზამის მიქსი</p>
+                <div class="order-container">
+                    <span class="price">15.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="edamame.png" alt="ედამამე">
+            <div class="item-info">
+                <h3>ედამამე</h3>
+                <p class="description">სოიოს მარცვლები</p>
+                <div class="order-container">
+                    <span class="price">12.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="spicy chicken wings.png" alt="ცხარე ქათმის ფრთები">
+            <div class="item-info">
+                <h3>ცხარე ქათმის ფრთები</h3>
+                <p class="description">პანირებული ქათმის ფრთა, ტერიაკი, სრირაჩა, სეზამი</p>
+                <div class="order-container">
+                    <span class="price">21.9 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="noodles-menu" class="sub-menu-container">
+    <h3>ატრია და ნუდლსი</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="blank.png" alt="ლაფშა ბოსტნეულით">
+            <div class="item-info">
+                <h3>ატრია ბოსტნეულით</h3>
+                <p class="description">ლაფშა, სტაფილო, წითელი ბულგარული, მწვანე ბულგარული, მწვანე ხახვი, სოიოს სოუსი, ტერიაკი, სრირაჩა</p>
+                <div class="order-container">
+                    <span class="price">14.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="chicken noodles.png" alt="ლაფშა ქათმით">
+            <div class="item-info">
+                <h3>ატრია ქათმით</h3>
+                <p class="description">ლაფშა, ქათმის ხორცი, სტაფილო, წითელი ბულგარული, მწვანე ბულგარული, კომბოსტო, მწვანე ხახვი, სოიოს სოუსი, ტერიაკი, სრირაჩა, თევზის სოუსი</p>
+                <div class="order-container">
+                    <span class="price">16.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="noodle with beef.png" alt="ლაფშა საქონლის ხორცით">
+            <div class="item-info">
+                <h3>ატრია საქონლის ხორცით</h3>
+                <p class="description">ლაფშა, საქონლის ხორცი, სტაფილო, წითელი ბულგარული, მწვანე ბულგარული, კომბოსტო, მწვანე ხახვი, სოიოს სოუსი, ტერიაკი, სრირაჩა</p>
+                <div class="order-container">
+                    <span class="price">18.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp noodles.png" alt="ლაფშა კრევეტით">
+            <div class="item-info">
+                <h3>ატრია კრევეტით</h3>
+                <p class="description">ატრია, კრევეტი, სტაფილო, წითელი ბულგარული, მწვანე ბულგარული, კომბოსტო, მწვანე ხახვი, სოიოს სოუსი, ტერიაკი, სრირაჩა, თევზის სოუსი</p>
+                <div class="order-container">
+                    <span class="price">23.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="ლაფშა ორაგულით">
+            <div class="item-info">
+                <h3>ატრია ორაგულით</h3>
+                <p class="description">ატრია, ორაგული, სტაფილო, კომბოსტო, მწვანე ბულგარული, წითელი ბულგარული, მწვანე ხახვი, სოიოს სოუსი, ტერიაკი, სრირაჩა, თევზის სოუსი</p>
+                <div class="order-container">
+                    <span class="price">22.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="ბრინჯი ბოსტნეულით">
+            <div class="item-info">
+                <h3>ბრინჯი ბოსტნეულით</h3>
+                <p class="description">ბრინჯი, სტაფილო, წითელი ბულგარული, მწვანე ბულგარული, კომბოსტო, მწვანე ხახვი, სოიოს სოუსი, ტერიაკი, სრირაჩა</p>
+                <div class="order-container">
+                    <span class="price">14.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="rice with chicken.png" alt="ბრინჯი ქათმით">
+            <div class="item-info">
+                <h3>ბრინჯი ქათმით</h3>
+                <p class="description">ბრინჯი, ქათმის ხორცი, სტაფილო, წითელი ბულგარული, მწვანე ბულგარული, კომბოსტო, მწვანე ხახვი, სოიოს სოუსი, ტერიაკი, სრირაჩა, თევზის სოუსი</p>
+                <div class="order-container">
+                    <span class="price">16.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="rice with beef.png" alt="ბრინჯი საქონლის ხორცით">
+            <div class="item-info">
+                <h3>ბრინჯი საქონლის ხორცით</h3>
+                <p class="description">ბრინჯი, საქონლის ხორცი, სტაფილო, წითელი ბულგარული, მწვანე ბულგარული, კომბოსტო, მწვანე ხახვი, სოიოს სოუსი, ტერიაკი, სრირაჩა</p>
+                <div class="order-container">
+                    <span class="price">18.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="rice with shrimp.png" alt="ბრინჯი კრევეტით">
+            <div class="item-info">
+                <h3>ბრინჯი კრევეტით</h3>
+                <p class="description">ბრინჯი, კრევეტი, სტაფილო, წითელი ბულგარული, მწვანე ბულგარული, კომბოსტო, მწვანე ხახვი, სოიოს სოუსი, ტერიაკი, სრირაჩა, თევზის სოუსი</p>
+                <div class="order-container">
+                    <span class="price">21.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="ბრინჯი ორაგულით">
+            <div class="item-info">
+                <h3>ბრინჯი ორაგულით</h3>
+                <p class="description">ბრინჯი, ორაგული, სტაფილო, წითელი ბულგარული, მწვანე ბულგარული, კომბოსტო, მწვანე ხახვი, სოიოს სოუსი, ტერიაკი, სრირაჩა, თევზის სოუსი</p>
+                <div class="order-container">
+                    <span class="price">22.5 ლარი</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<script>
+    function toggleMenu(menuId) {
+        // ყველა სხვა მენიუს დახურვა
+        document.querySelectorAll('.sub-menu-container').forEach(menu => {
+            if(menu.id !== menuId) menu.classList.remove('active');
+        });
+        
+        // არჩეული მენიუს გამოჩენა/დამალვა
+        const selectedMenu = document.getElementById(menuId);
+        selectedMenu.classList.toggle('active');
+        
+        // გვერდის ოდნავ ჩამოწევა მენიუზე
+        if(selectedMenu.classList.contains('active')) {
+            setTimeout(() => {
+                selectedMenu.scrollIntoView({ behavior: 'smooth' });
+            }, 200);
+        }
+    }
+</script>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p><strong>მისამართი:</strong> ბათუმი, ირაკლი აბაშიძის 4</p>
+            <p><strong>ტელეფონი:</strong> <a href="tel:+995511232338">+995 511 23 23 38</a></p>
+        </div>
+
+        <div class="footer-socials">
+            <p>გვიპოვეთ სოციალურ ქსელებში:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1DxDAYt733/" class="icon-link">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/royalsushi.batumi?igsh=NnRmcGJia2F6bmFh" class="icon-link">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g297576-d33263121-Reviews-Royal_Sushi_Batumi-Batumi_Adjara_Region.html" class="icon-link">
+                    <img src="tripadvisor.png" alt="Tripadvisor">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Royal Sushi. ყველა უფლება დაცულია.</p>
+    </div>
+</footer>

@@ -508,3 +508,35 @@ footer {
     line-height: 1.5;    /* სტრიქონებს შორის ინტერვალი */
     font-family: sans-serif; /* ინგლისური ტექსტისთვის კარგად იკითხება */
 }
+
+/* კონტეინერი თითოეული ენისთვის */
+.lang-item {
+    display: flex;
+    align-items: center; /* ტექსტისა და დროშის ცენტრირება ვერტიკალურად */
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s;
+}
+
+/* მაუსის მიტანის ეფექტი */
+.lang-item:hover {
+    background-color: #f5f5f5;
+}
+
+/* დროშის სტილი */
+.flag-icon {
+    width: 20px;          /* დროშის სიგანე */
+    height: auto;         /* პროპორციის დაცვა */
+    margin-right: 10px;   /* დაშორება დროშასა და ტექსტს შორის */
+    border-radius: 2px;   /* ოდნავ დაუმრგვალე კუთხეები */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* მსუბუქი ჩრდილი მეტი სილამაზისთვის */
+}
+
+/* თუ გინდა დროშა იყოს მრგვალი, გამოიყენე ეს: */
+.flag-icon.round {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}

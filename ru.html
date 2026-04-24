@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Sushi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+<header>
+    <nav>
+    <div class="left-side">
+        <img id="navlogo" src="logo.png" alt="website logo">
+        <span id="nametext">Royal Sushi</span>
+    </div>
+
+    <ul>
+        <li class="buttons"><a href="index.html">Menu</a></li>
+        <li class="buttons"><a href="aboutus.html">About Us</a></li>
+        <li class="buttons"><a href="tel:+995511232338">Contact Us</a></li>
+        
+        <li class="buttons dropdown">
+    
+    <div class="lang-dropdown">
+    <a href="index.html" class="lang-item">
+        <img src="https://flagcdn.com/w40/gb.png" alt="English Flag" class="flag-icon">
+        <span>EN</span>
+    </a>
+    
+    <a href="ka.html" class="lang-item">
+        <img src="https://flagcdn.com/w40/ge.png" alt="Georgian Flag" class="flag-icon">
+        <span>KA</span>
+    </a>
+    
+    <a href="ru.html" class="lang-item">
+        <img src="https://flagcdn.com/w40/ru.png" alt="Russian Flag" class="flag-icon">
+        <span>RU</span>
+    </a>
+</div>
+</li>
+    </ul>
+</nav>
+</header>
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide"><img src="shrimp maki.webp" alt=""></div>
+        <div class="slide"><img src="shrimp nigri.webp" alt=""></div>
+        <div class="slide"><img src="salmon maki.webp" alt=""></div>
+        <div class="slide"><img src="salmon nigri.webp" alt=""></div>
+        <div class="slide"><img src="eel maki.webp" alt=""></div>
+        <div class="slide"><img src="eel nigri.webp" alt=""></div>
+        
+        <div class="slide"><img src="shrimp maki.webp" alt=""></div>
+        <div class="slide"><img src="shrimp nigri.webp" alt=""></div>
+        <div class="slide"><img src="salmon maki.webp" alt=""></div>
+        <div class="slide"><img src="salmon nigri.webp" alt=""></div>
+        <div class="slide"><img src="eel maki.webp" alt=""></div>
+        <div class="slide"><img src="eel nigri.webp" alt=""></div>
+    </div>
+</div>
+
+<section class="category-section">
+    <h2 class="section-title">Категории</h2>
+    <div class="category-grid">
+        <div class="category-card" onclick="toggleMenu('sashimi-menu')">
+            <div class="category-image">
+                <img src="sashimi.webp" alt="Сашими">
+            </div>
+            <span class="category-name">САШИМИ</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('nigiri-menu')">
+            <div class="category-image">
+                <img src="nigiri.webp" alt="Нигири">
+            </div>
+            <span class="category-name">НИГИРИ</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('gunkan-menu')">
+            <div class="category-image">
+                <img src="gunkan.png" alt="Гункан">
+            </div>
+            <span class="category-name">ГУНКАН</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('maki-menu')">
+            <div class="category-image">
+                <img src="maki.webp" alt="Маки">
+            </div>
+            <span class="category-name">МАКИ</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('roll-menu')">
+            <div class="category-image">
+                <img src="roll.webp" alt="Роллы">
+            </div>
+            <span class="category-name">РОЛЛЫ</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('hotroll-menu')">
+            <div class="category-image">
+                <img src="hot  roll.webp" alt="Горячие роллы">
+            </div>
+            <span class="category-name">ГОРЯЧИЕ РОЛЛЫ</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('asiansnack-menu')">
+            <div class="category-image">
+                <img src="asian snack.png" alt="Азиатские закуски">
+            </div>
+            <span class="category-name">АЗИАТСКИЕ ЗАКУСКИ</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('noodles-menu')">
+            <div class="category-image">
+                <img src="noodles.png" alt="Лапша">
+            </div>
+            <span class="category-name">ЛАПША / РИС</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('set-menu')">
+            <div class="category-image">
+                <img src="set.webp" alt="Сеты">
+            </div>
+            <span class="category-name">СЕТЫ</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('sushiburger-menu')">
+            <div class="category-image">
+                <img src="sushiburger.webp" alt="Суши бургер">
+            </div>
+            <span class="category-name">СУШИ БУРГЕР</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('wine-menu')">
+            <div class="category-image">
+                <img src="wine.jpg" alt="Вино">
+            </div>
+            <span class="category-name">ВИНО</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('nonalcoholicdrinks-menu')">
+            <div class="category-image">
+                <img src="non alcoholic drinks.jpg" alt="Безалкогольные напитки">
+            </div>
+            <span class="category-name">БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ</span>
+        </div>
+        
+        <div class="category-card" onclick="toggleMenu('japanesedrinks-menu')">
+            <div class="category-image">
+                <img src="japanese drinks.webp" alt="Японские напитки">
+            </div>
+            <span class="category-name">ЯПОНСКИЕ НАПИТКИ</span>
+        </div>
+
+        <div class="category-card" onclick="toggleMenu('coffee-menu')">
+            <div class="category-image">
+                <img src="coffee.jpg" alt="Кофе">
+            </div>
+            <span class="category-name">КОФЕ</span>
+        </div>
+    </div>
+
+    <div id="sashimi-menu" class="sub-menu-container">
+    <h3>САШИМИ</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon sashimi.webp" alt="Сашими лосось">
+            <div class="item-info">
+                <h3>САШИМИ ЛОСОСЬ</h3>
+                <p class="description">Свежий норвежский лосось</p>
+                <div class="order-container">
+                    <span class="price">37.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp sashimi.png" alt="Сашими креветка">
+            <div class="item-info">
+                <h3>САШИМИ КРЕВЕТКА</h3>
+                <div class="order-container">
+                    <span class="price">39.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel sashimi.webp" alt="Сашими угорь">
+            <div class="item-info">
+                <h3>САШИМИ УГОРЬ</h3>
+                <p class="description">Угорь, рис, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">42.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="tuna sashimi.webp" alt="Сашими тунец">
+            <div class="item-info">
+                <h3>САШИМИ ТУНЕЦ</h3>
+                <div class="order-container">
+                    <span class="price">38.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="nigiri-menu" class="sub-menu-container">
+    <h3>НИГИРИ</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon nigiri.webp" alt="Нигири лосось">
+            <div class="item-info">
+                <h3>НИГИРИ ЛОСОСЬ</h3>
+                <p class="description">Лосось, рис, васаби</p>
+                <div class="order-container">
+                    <span class="price">13.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp nigri.webp" alt="Нигири креветка">
+            <div class="item-info">
+                <h3>НИГИРИ КРЕВЕТКА</h3>
+                <p class="description">Королевская креветка, рис, васаби</p>
+                <div class="order-container">
+                    <span class="price">14.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel nigri.webp" alt="Нигири угорь">
+            <div class="item-info">
+                <h3>НИГИРИ УГОРЬ</h3>
+                <p class="description">Угорь, рис, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">15.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="tuna nigri.webp" alt="Нигири тунец">
+            <div class="item-info">
+                <h3>НИГИРИ ТУНЕЦ</h3>
+                <p class="description">Тунец, рис, имбирь</p>
+                <div class="order-container">
+                    <span class="price">13.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="maki-menu" class="sub-menu-container">
+    <h3>МАКИ</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon maki.webp" alt="Маки лосось">
+            <div class="item-info">
+                <h3>МАКИ ЛОСОСЬ</h3>
+                <p class="description">Лосось, рис, нори, васаби</p>
+                <div class="order-container">
+                    <span class="price">17.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp maki.webp" alt="Маки креветка">
+            <div class="item-info">
+                <h3>МАКИ КРЕВЕТКА</h3>
+                <p class="description">Королевская креветка, рис, нори</p>
+                <div class="order-container">
+                    <span class="price">18.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel maki.webp" alt="Маки угорь">
+            <div class="item-info">
+                <h3>МАКИ УГОРЬ</h3>
+                <p class="description">Угорь, рис, терияки, кунжут, нори</p>
+                <div class="order-container">
+                    <span class="price">19.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Маки икра">
+            <div class="item-info">
+                <h3>МАКИ С ИКРОЙ</h3>
+                <p class="description">Рис, нори, крем-чиз, огурец, икра, терияки</p>
+                <div class="order-container">
+                    <span class="price">20.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Маки краб">
+            <div class="item-info">
+                <h3>МАКИ КРАБ</h3>
+                <p class="description">Рис, нори, крабовый микс, терияки, спайси соус, кунжут</p>
+                <div class="order-container">
+                    <span class="price">16.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="avocado maki.webp" alt="Маки авокадо">
+            <div class="item-info">
+                <h3>МАКИ АВОКАДО</h3>
+                <p class="description">Авокадо, рис, нори</p>
+                <div class="order-container">
+                    <span class="price">12.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="cucumber maki.webp" alt="Маки огурец">
+            <div class="item-info">
+                <h3>МАКИ ОГУРЕЦ</h3>
+                <p class="description">Огурец, рис, нори</p>
+                <div class="order-container">
+                    <span class="price">11.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="tuna maki.webp" alt="Маки тунец">
+            <div class="item-info">
+                <h3>МАКИ ТУНЕЦ</h3>
+                <p class="description">Тунец, рис, нори, терияки</p>
+                <div class="order-container">
+                    <span class="price">17.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="roll-menu" class="sub-menu-container">
+    <h3>РОЛЛЫ</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="roll of the chef.png" alt="Ролл от шефа">
+            <div class="item-info">
+                <h3>РОЛЛ ОТ ШЕФА</h3>
+                <p class="description">Рис, нори, панированный лосось, крем-чиз, лосось, авокадо, икра, манго соус, терияки</p>
+                <div class="order-container">
+                    <span class="price">53.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="royal roll.webp" alt="Роял ролл">
+            <div class="item-info">
+                <h3>РОЯЛ РОЛЛ</h3>
+                <p class="description">Рис, нори, лосось, панированная креветка, икра, авокадо, манго соус, терияки</p>
+                <div class="order-container">
+                    <span class="price">49.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="caviar roll.webp" alt="Ролл с икрой">
+            <div class="item-info">
+                <h3>ИКРЯНОЙ РОЛЛ</h3>
+                <p class="description">Икра лосося, крем-чиз, рис, нори, лосось, авокадо</p>
+                <div class="order-container">
+                    <span class="price">47.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="philadelphia roll.webp" alt="Филадельфия">
+            <div class="item-info">
+                <h3>ФИЛАДЕЛЬФИЯ</h3>
+                <p class="description">Свежий лосось, рис, нори, крем-чиз, авокадо, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">30.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="salmon california.webp" alt="Калифорния с лососем">
+            <div class="item-info">
+                <h3>КАЛИФОРНИЯ С ЛОСОСЕМ</h3>
+                <p class="description">Рис, нори, крем-чиз, лосось, огурец, авокадо, тобико, терияки</p>
+                <div class="order-container">
+                    <span class="price">32.5 Лаრი</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="california with shrimp.png" alt="Калифорния с креветкой">
+            <div class="item-info">
+                <h3>КАЛИФОРНИЯ С КРЕВЕТКОЙ</h3>
+                <p class="description">Рис, нори, креветка, тобико, авокадо, огурец, спайси соус, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">34.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="california with eel.webp" alt="Калифорния с угрём">
+            <div class="item-info">
+                <h3>КАЛИФОРНИЯ С УГРЁМ</h3>
+                <p class="description">Рис, нори, тобико, угорь, крем-чиз, авокадо, огурец, манго соус, терияки</p>
+                <div class="order-container">
+                    <span class="price">37.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="sakura roll.webp" alt="Ролл Сакура">
+            <div class="item-info">
+                <h3>РОЛЛ САКУРА</h3>
+                <p class="description">Рис, нори, крем-чиз, лосось, маринованный лук, огурец, тобико, икра, спайси, терияки</p>
+                <div class="order-container">
+                    <span class="price">37.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="golden sensei.webp" alt="Голден Сэнсэй">
+            <div class="item-info">
+                <h3>ГОЛДЕН СЭНСЭЙ</h3>
+                <p class="description">Угорь, рис, нори, крем-чиз, лосось, авокадо, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">39.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="black dragon.webp" alt="Черный дракон">
+            <div class="item-info">
+                <h3>ЧЕРНЫЙ ДРАКОН</h3>
+                <p class="description">Угорь, рис, нори, креветка, крем-чиз, авокадо, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">39.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red dragon.png" alt="Красный дракон">
+            <div class="item-info">
+                <h3>КРАСНЫЙ ДРАКОН</h3>
+                <p class="description">Рис, нори, угорь, лосось, крем-чиз, авокадо, терияки, манго соус, кунжут</p>
+                <div class="order-container">
+                    <span class="price">39.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="white sensei.webp" alt="Уайт Сэнсэй">
+            <div class="item-info">
+                <h3>УАЙТ СЭНСЭЙ</h3>
+                <p class="description">Рис, нори, крем-чиз, угорь, авокадо, креветка, терияки</p>
+                <div class="order-container">
+                    <span class="price">39.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel roll.webp" alt="Ролл с угрём">
+            <div class="item-info">
+                <h3>РОЛЛ С УГРЁМ</h3>
+                <p class="description">Угорь, рис, нори, крем-чиз, огурец, авокадо, терияки, кунжут, манго соус</p>
+                <div class="order-container">
+                    <span class="price">44.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="vegetables light roll.png" alt="Овощной лайт ролл">
+            <div class="item-info">
+                <h3>ОВОЩНОЙ ЛАЙТ РОЛЛ</h3>
+                <p class="description">Рис, нори, огурец, морковь, авокадо, болгарский перец, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">25.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="vegetables green roll.png" alt="Овощной грин ролл">
+            <div class="item-info">
+                <h3>ОВОЩНОЙ ГРИН РОЛЛ</h3>
+                <p class="description">Рис, нори, крем-чиз, огурец, авокадо, болгарский перец, зеленый лук, спайси, терияки</p>
+                <div class="order-container">
+                    <span class="price">27.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="vegetables royal roll.png" alt="Овощной роял ролл">
+            <div class="item-info">
+                <h3>ОВОЩНОЙ РОЯЛ РОЛЛ</h3>
+                <p class="description">Рис, нори, авокадо, огурец, крем-чиз, морковь, болгарский перец, зеленый лук, манго соус, терияки</p>
+                <div class="order-container">
+                    <span class="price">29.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="hotroll-menu" class="sub-menu-container">
+    <h3>ГОРЯЧИЕ РОЛЛЫ</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="hot salmon roll.webp" alt="Горячий ролл с лососем">
+            <div class="item-info">
+                <h3>ГОРЯЧИЙ РОЛЛ С ЛОСОСЕМ</h3>
+                <p class="description">Рис, нори, крем-чиз, авокадо, лосось, огурец, терияки, спайси соус, кунжут</p>
+                <div class="order-container">
+                    <span class="price">33.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Горячий ролл с креветкой">
+            <div class="item-info">
+                <h3>ГОРЯЧИЙ РОЛЛ С КРЕВЕТКОЙ</h3>
+                <p class="description">Рис, нори, крем-чиз, креветка, авокадо, огурец, спайси соус, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">34.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="hot eel roll.webp" alt="Горячий ролл с угрём">
+            <div class="item-info">
+                <h3>ГОРЯЧИЙ РОЛЛ С УГРЁМ</h3>
+                <p class="description">Рис, нори, крем-чиз, авокадо, угорь, огурец, терияки, манго соус, кунжут</p>
+                <div class="order-container">
+                    <span class="price">35.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Горячий Роял ролл">
+            <div class="item-info">
+                <h3>ГОРЯЧИЙ РОЯЛ РОЛЛ</h3>
+                <p class="description">Рис, нори, крем-чиз, лосось, угорь, авокадо, огурец, манго соус, соус авокадо, терияки</p>
+                <div class="order-container">
+                    <span class="price">38.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="hot tuna roll.webp" alt="Горячий ролл с тунцом">
+            <div class="item-info">
+                <h3>ГОРЯЧИЙ РОЛЛ С ТУНЦОМ</h3>
+                <p class="description">Рис, нори, тунец, авокадо, огурец, манго соус, спайси соус, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">33.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="set-menu" class="sub-menu-container">
+    <h3>СЕТЫ</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="hot set.webp" alt="Горячий сет">
+            <div class="item-info">
+                <h3>ГОРЯЧИЙ СЕТ</h3>
+                <p class="description">Горячий ролл с лососем, горячий ролл с угрём, горячий ролл с креветкой, горячий роял ролл</p>
+                <div class="order-container">
+                    <span class="price">104.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="royal set small.webp" alt="Роял сет малый">
+            <div class="item-info">
+                <h3>РОЯЛ СЕТ МАЛЫЙ</h3>
+                <p class="description">Филадельфия, Калифорния, маки с угрём, маки с лососем, маки авокадо</p>
+                <div class="order-container">
+                    <span class="price">97.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Роял сет большой">
+            <div class="item-info">
+                <h3>РОЯЛ СЕТ БОЛЬШОЙ</h3>
+                <p class="description">Горячий ролл с лососем, горячий ролл с креветкой, Филадельфия, Черный дракон, Калифорния с лососем, маки с лососем, маки с угрём, маки с креветкой, маки с крабом, маки авокадо</p>
+                <div class="order-container">
+                    <span class="price">166.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="sushiburger-menu" class="sub-menu-container">
+    <h3>СУШИ БУРГЕР</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon burger.webp" alt="Бургер с лососем">
+            <div class="item-info">
+                <h3>БУРГЕР С ЛОСОСЕМ</h3>
+                <p class="description">Лосось, икра, рис, нори, крем-чиз, огурец, авокадо, спайси соус, манго соус, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">38.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp eel tuna burger.webp" alt="Бургер с креветкой">
+            <div class="item-info">
+                <h3>БУРГЕР С КРЕВЕТКОЙ</h3>
+                <p class="description">Креветка, рис, нори, крем-чиз, огурец, авокадо, спайси соус, манго соус, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">39.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp eel tuna burger.webp" alt="Бургер с угрём">
+            <div class="item-info">
+                <h3>БУРГЕР С УГРЁМ</h3>
+                <p class="description">Угорь, рис, нори, крем-чиз, огурец, авокадо, спайси соус, манго соус, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">40.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp eel tuna burger.webp" alt="Бургер с тунцом">
+            <div class="item-info">
+                <h3>БУРГЕР С ТУНЦОМ</h3>
+                <p class="description">Тунец, рис, нори, огурец, авокадо, спайси соус, манго соус, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">37.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="wine-menu" class="sub-menu-container">
+    <h3>ВИНО</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="tsinandeli.webp" alt="Цинандали">
+            <div class="item-info">
+                <h3>ЦИНАНДАЛИ</h3>
+                <div class="order-container">
+                    <span class="price">7 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="mukuzani.webp" alt="Мукузани">
+            <div class="item-info">
+                <h3>МУКУЗАНИ</h3>
+                <div class="order-container">
+                    <span class="price">9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="saperavi.webp" alt="Саперави">
+            <div class="item-info">
+                <h3>САПЕРАВИ</h3>
+                <div class="order-container">
+                    <span class="price">8 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="nonalcoholicdrinks-menu" class="sub-menu-container">
+    <h3>БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="still water.webp" alt="Вода">
+            <div class="item-info">
+                <h3>ВОДА</h3>
+                <div class="order-container">
+                    <span class="price">4 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="nabeglavi.webp" alt="Набеглави">
+            <div class="item-info">
+                <h3>НАБЕГЛАВИ</h3>
+                <div class="order-container">
+                    <span class="price">4 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="coca cola.webp" alt="Кока-Кола">
+            <div class="item-info">
+                <h3>КОКА-КОЛА</h3>
+                <div class="order-container">
+                    <span class="price">4 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="fanta.jpg" alt="Фанта">
+            <div class="item-info">
+                <h3>ФАНТА</h3>
+                <div class="order-container">
+                    <span class="price">4 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="sprite.webp" alt="Спрайт">
+            <div class="item-info">
+                <h3>СПРАЙТ</h3>
+                <div class="order-container">
+                    <span class="price">4 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="cherry.webp" alt="Вишневый сок">
+            <div class="item-info">
+                <h3>ВИШНЯ</h3>
+                <div class="order-container">
+                    <span class="price">5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="apple.webp" alt="Яблочный сок">
+            <div class="item-info">
+                <h3>ЯБЛОКО</h3>
+                <div class="order-container">
+                    <span class="price">5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="peach.webp" alt="Персиковый сок">
+            <div class="item-info">
+                <h3>ПЕРСИК</h3>
+                <div class="order-container">
+                    <span class="price">5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="orange.webp" alt="Апельсиновый сок">
+            <div class="item-info">
+                <h3>АПЕЛЬСИН</h3>
+                <div class="order-container">
+                    <span class="price">5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pineapple.webp" alt="Ананасовый сок">
+            <div class="item-info">
+                <h3>АНАНАСОВЫЙ СОК</h3>
+                <div class="order-container">
+                    <span class="price">5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pomegranate juice.webp" alt="Гранатовый сок">
+            <div class="item-info">
+                <h3>ГРАНАТОВЫЙ СОК</h3>
+                <div class="order-container">
+                    <span class="price">5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red bull energy drink.webp" alt="Ред Булл">
+            <div class="item-info">
+                <h3>RED BULL ЭНЕРГЕТИК</h3>
+                <div class="order-container">
+                    <span class="price">9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red bull sugarfree.webp" alt="Ред Булл без сахара">
+            <div class="item-info">
+                <h3>RED BULL БЕЗ САХАРА</h3>
+                <div class="order-container">
+                    <span class="price">9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red bull tropical.jpg" alt="Ред Булл тропик">
+            <div class="item-info">
+                <h3>RED BULL ТРОПИЧЕСКИЙ</h3>
+                <div class="order-container">
+                    <span class="price">9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="japanesedrinks-menu" class="sub-menu-container">
+    <h3>ЯПОНСКИЕ НАПИТКИ</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="soju.webp" alt="Соджу">
+            <div class="item-info">
+                <h3>СОДЖУ</h3>
+                <div class="order-container">
+                    <span class="price">29 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="coffee-menu" class="sub-menu-container">
+    <h3>КОФЕ</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="espresso.jpg" alt="Эспрессо">
+            <div class="item-info">
+                <h3>ЭСПРЕССО</h3>
+                <div class="order-container">
+                    <span class="price">5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="cappucchino.jpg" alt="Капучино">
+            <div class="item-info">
+                <h3>КАПУЧИНО</h3>
+                <div class="order-container">
+                    <span class="price">7 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="americano.jpg" alt="Американо">
+            <div class="item-info">
+                <h3>АМЕРИКАНО</h3>
+                <div class="order-container">
+                    <span class="price">6 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="gunkan-menu" class="sub-menu-container">
+    <h3>ГУНКАН</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon gunkan.png" alt="Гункан с лососем">
+            <div class="item-info">
+                <h3>ГУНКАН С ЛОСОСЕМ</h3>
+                <p class="description">Свежий лосось, рис, нори, икра, крем-чиз</p>
+                <div class="order-container">
+                    <span class="price">14.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp gunkan.png" alt="Гункан с креветкой">
+            <div class="item-info">
+                <h3>ГУНКАН С КРЕВЕТКОЙ</h3>
+                <p class="description">Креветка, рис, нори, спайси соус, кунжут</p>
+                <div class="order-container">
+                    <span class="price">13.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="eel gunkan.png" alt="Гункан с угрём">
+            <div class="item-info">
+                <h3>ГУНКАН С УГРЁМ</h3>
+                <p class="description">Угорь, рис, нори, крем-чиз, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">15.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Гункан с икрой">
+            <div class="item-info">
+                <h3>ГУНКАН С ИКРОЙ</h3>
+                <p class="description">Рис, нори, крем-чиз, икра, терияки</p>
+                <div class="order-container">
+                    <span class="price">16.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Гункан тобико">
+            <div class="item-info">
+                <h3>ГУНКАН ТОБИКО</h3>
+                <p class="description">Рис, нори, тобико, спайси соус, соус терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">12.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="tuna gunkan.png" alt="Гункан с тунцом">
+            <div class="item-info">
+                <h3>ГУНКАН С ТУНЦОМ</h3>
+                <p class="description">Тунец, рис, нори, спайси соус, терияки, кунжут</p>
+                <div class="order-container">
+                    <span class="price">13.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="asiansnack-menu" class="sub-menu-container">
+    <h3>АЗИАТСКИЕ ЗАКУСКИ</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="salmon tempura.png" alt="Лосось темпура">
+            <div class="item-info">
+                <h3>ЛОСОСЬ ТЕМПУРА</h3>
+                <p class="description">Лосось в панировке</p>
+                <div class="order-container">
+                    <span class="price">30.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp tempura.png" alt="Креветки темпура">
+            <div class="item-info">
+                <h3>КРЕВЕТКИ ТЕМПУРА</h3>
+                <p class="description">Креветки в панировке</p>
+                <div class="order-container">
+                    <span class="price">32.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp gyoza.png" alt="Гедза с креветкой">
+            <div class="item-info">
+                <h3>ГЕДЗА С КРЕВЕТКОЙ</h3>
+                <p class="description">Тесто для гедза, креветки, дасиномамото, петрушка</p>
+                <div class="order-container">
+                    <span class="price">25.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="chicken gioza.png" alt="Гедза с курицей">
+            <div class="item-info">
+                <h3>ГЕДЗА С КУРИЦЕЙ</h3>
+                <p class="description">Тесто для гедза, куриное мясо, дасиномамото, петрушка</p>
+                <div class="order-container">
+                    <span class="price">23.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="hiashi salad.png" alt="Салат Хияши">
+            <div class="item-info">
+                <h3>САЛАТ ХИЯШИ</h3>
+                <p class="description">Водоросли хияши, апельсин, кунжут</p>
+                <div class="order-container">
+                    <span class="price">15.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="edamame.png" alt="Эдамаме">
+            <div class="item-info">
+                <h3>ЭДАМАМЕ</h3>
+                <p class="description">Соевые бобы</p>
+                <div class="order-container">
+                    <span class="price">12.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="spicy chicken wings.png" alt="Острые куриные крылышки">
+            <div class="item-info">
+                <h3>ОСТРЫЕ КУРИНЫЕ КРЫЛЫШКИ</h3>
+                <p class="description">Куриные крылышки в панировке, терияки, соус шрирача, кунжут</p>
+                <div class="order-container">
+                    <span class="price">21.9 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="noodles-menu" class="sub-menu-container">
+    <h3>ЛАПША И РИС</h3>
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <img src="blank.png" alt="Лапша с овощами">
+            <div class="item-info">
+                <h3>ЛАПША С ОВОЩАМИ</h3>
+                <p class="description">Лапша, морковь, красный болгарский перец, зеленый болгарский перец, капуста, зеленый лук, соевый соус, терияки, шрирача</p>
+                <div class="order-container">
+                    <span class="price">14.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="chicken noodles.png" alt="Лапша с курицей">
+            <div class="item-info">
+                <h3>ЛАПША С КУРИЦЕЙ</h3>
+                <p class="description">Лапша, куриное мясо, морковь, красный болгарский перец, зеленый болгарский перец, капуста, зеленый лук, соевый соус, терияки, шрирача, рыбный соус</p>
+                <div class="order-container">
+                    <span class="price">16.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="noodle with beef.png" alt="Лапша с говядиной">
+            <div class="item-info">
+                <h3>ЛАПША С ГОВЯДИНОЙ</h3>
+                <p class="description">Лапша, говядина, морковь, красный болгарский перец, зеленый болгарский перец, капуста, зеленый лук, соевый соус, терияки, шрирача</p>
+                <div class="order-container">
+                    <span class="price">18.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="shrimp noodles.png" alt="Лапша с креветками">
+            <div class="item-info">
+                <h3>ЛАПША С КРЕВЕТКАМИ</h3>
+                <p class="description">Лапша, креветки, морковь, красный болгарский перец, зеленый болгарский перец, капуста, зеленый лук, соевый соус, терияки, шрирача, рыбный соус</p>
+                <div class="order-container">
+                    <span class="price">23.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Лапша с лососем">
+            <div class="item-info">
+                <h3>ЛАПША С ЛОСОСЕМ</h3>
+                <p class="description">Лапша, лосось, морковь, красный болгарский перец, зеленый болгарский перец, капуста, зеленый лук, соевый соус, терияки, шрирача, рыбный соус</p>
+                <div class="order-container">
+                    <span class="price">22.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Рис с овощами">
+            <div class="item-info">
+                <h3>РИС С ОВОЩАМИ</h3>
+                <p class="description">Рис, морковь, красный болгарский перец, зеленый болгарский перец, капуста, зеленый лук, соевый соус, терияки, шрирача</p>
+                <div class="order-container">
+                    <span class="price">14.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="rice with chicken.png" alt="Рис с курицей">
+            <div class="item-info">
+                <h3>РИС С КУРИЦЕЙ</h3>
+                <p class="description">Рис, куриное мясо, морковь, красный болгарский перец, зеленый болгарский перец, капуста, зеленый лук, соевый соус, терияки, шрирача, рыбный соус</p>
+                <div class="order-container">
+                    <span class="price">16.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="rice with beef.png" alt="Рис с говядиной">
+            <div class="item-info">
+                <h3>РИС С ГОВЯДИНОЙ</h3>
+                <p class="description">Рис, говядина, морковь, красный болгарский перец, зеленый болгарский перец, капуста, зеленый лук, соевый соус, терияки, шрирача</p>
+                <div class="order-container">
+                    <span class="price">18.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="rice with shrimp.png" alt="Рис с креветками">
+            <div class="item-info">
+                <h3>РИС С КРЕВЕТКАМИ</h3>
+                <p class="description">Рис, креветки, морковь, красный болгарский перец, зеленый болгарский перец, капуста, зеленый лук, соевый соус, терияки, шрирача, рыбный соус</p>
+                <div class="order-container">
+                    <span class="price">21.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="blank.png" alt="Рис с лососем">
+            <div class="item-info">
+                <h3>РИС С ЛОСОСЕМ</h3>
+                <p class="description">Рис, лосось, морковь, красный болгарский перец, зеленый болгарский перец, капуста, зеленый лук, соевый соус, терияки, шრიрача, рыбный соус</p>
+                <div class="order-container">
+                    <span class="price">22.5 Лари</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<script>
+    function toggleMenu(menuId) {
+        // ყველა სხვა მენიუს დახურვა
+        document.querySelectorAll('.sub-menu-container').forEach(menu => {
+            if(menu.id !== menuId) menu.classList.remove('active');
+        });
+        
+        // არჩეული მენიუს გამოჩენა/დამალვა
+        const selectedMenu = document.getElementById(menuId);
+        selectedMenu.classList.toggle('active');
+        
+        // გვერდის ოდნავ ჩამოწევა მენიუზე
+        if(selectedMenu.classList.contains('active')) {
+            setTimeout(() => {
+                selectedMenu.scrollIntoView({ behavior: 'smooth' });
+            }, 200);
+        }
+    }
+</script>
+    
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p><strong>Адрес:</strong> Батуми, Иракли Абашидзе 4</p>
+            <p><strong>Телефон:</strong> <a href="tel:+995511232338">+995 511 23 23 38</a></p>
+        </div>
+
+        <div class="footer-socials">
+            <p>Найдите нас в соцсетях:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1DxDAYt733/" class="icon-link"><img src="facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/royalsushi.batumi?igsh=NnRmcGJia2F6bmFh" class="icon-link"><img src="instagram.png" alt="Instagram"></a>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g297576-d33263121-Reviews-Royal_Sushi_Batumi-Batumi_Adjara_Region.html" class="icon-link"><img src="tripadvisor.png" alt="Tripadvisor"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Royal Sushi. Все права защищены.</p>
+    </div>
+</footer>
