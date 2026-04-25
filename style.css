@@ -540,3 +540,45 @@ footer {
     object-fit: cover;
     border-radius: 50%;
 }
+
+.toggle-price-btn {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.toggle-price-btn:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* როცა ბოთლია არჩეული, შეგვიძლია ფერი შევუცვალოთ */
+.toggle-price-btn.bottle-active {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+/* საწყის ეტაპზე ყველა მენიუ დამალულია */
+.sub-menu-container {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* როცა JavaScript დაამატებს 'active' კლასს, მაშინ გამოჩნდება */
+.sub-menu-container.active {
+    display: block;
+    opacity: 1;
+}
+
+.sub-menu-container.active {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}

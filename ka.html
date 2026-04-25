@@ -173,7 +173,7 @@
             <div class="category-image">
                 <img src="coffee.jpg" alt="ყავა">
             </div>
-            <span class="category-name">ყავა / ჩაი</span>
+            <span class="category-name">ყავა</span>
         </div>
     </div>
 
@@ -714,11 +714,14 @@
     <div class="menu-container">
         
         <div class="menu-item">
-            <img src="tsinandeli.webp" alt="წინანდალი">
+            <img src="tsinandeli.webp" alt="წინანდელი">
             <div class="item-info">
-                <h3>წინანდალი</h3>
+                <h3>წინანდელი</h3>
                 <div class="order-container">
-                    <span class="price">7 ლარი</span>
+                    <span class="price" id="price-tsinandali">7 ლარი</span>
+                    <button class="price" onclick="toggleWinePrice('tsinandali', 7, 40)">
+                        ბოთლი
+                    </button>
                 </div>
             </div>
         </div>
@@ -728,7 +731,10 @@
             <div class="item-info">
                 <h3>მუკუზანი</h3>
                 <div class="order-container">
-                    <span class="price">9 ლარი</span>
+                    <span class="price" id="price-mukuzani">9 ლარი</span>
+                    <button class="price" onclick="toggleWinePrice('mukuzani', 9, 50)">
+                         ბოთლი
+                    </button>
                 </div>
             </div>
         </div>
@@ -738,14 +744,16 @@
             <div class="item-info">
                 <h3>საფერავი</h3>
                 <div class="order-container">
-                    <span class="price">8 ლარი</span>
+                    <span class="price" id="price-saperavi">8 ლარი</span>
+                    <button class="price" onclick="toggleWinePrice('saperavi', 8, 45)">
+                         ბოთლი
+                    </button>
                 </div>
             </div>
         </div>
 
     </div>
 </div>
-
 <div id="nonalcoholicdrinks-menu" class="sub-menu-container">
     <h3>უალკოჰოლო სასმელები</h3>
     <div class="menu-container">
@@ -911,7 +919,7 @@
 </div>
 
 <div id="coffee-menu" class="sub-menu-container">
-    <h3>ყავა / ჩაი</h3>
+    <h3>ყავა</h3>
     <div class="menu-container">
         
         <div class="menu-item">
@@ -943,7 +951,7 @@
                 </div>
             </div>
         </div>
-
+<!--
         <div class="menu-item">
             <img src="black tea.png" alt="შავი ჩაი">
             <div class="item-info">
@@ -977,7 +985,7 @@
             </div>
         </div>
 
-
+-->
     </div>
 </div>
 
@@ -1057,7 +1065,7 @@
 <div id="asiansnack-menu" class="sub-menu-container">
     <h3>აზიური სნექი</h3>
     <div class="menu-container">
-        
+<!--       
         <div class="menu-item">
             <img src="salmon tempura.png" alt="ორაგულის ტემპურა">
             <div class="item-info">
@@ -1068,7 +1076,7 @@
                 </div>
             </div>
         </div>
-
+-->
         <div class="menu-item">
             <img src="shrimp tempura.png" alt="კრევეტის ტემპურა">
             <div class="item-info">
@@ -1079,7 +1087,7 @@
                 </div>
             </div>
         </div>
-
+<!--
         <div class="menu-item">
             <img src="shrimp gyoza.png" alt="კრევეტის გიოზა">
             <div class="item-info">
@@ -1101,7 +1109,7 @@
                 </div>
             </div>
         </div>
-
+-->
         <div class="menu-item">
             <img src="hiashi salad.png" alt="ჰიაში სალათი">
             <div class="item-info">
@@ -1123,7 +1131,7 @@
                 </div>
             </div>
         </div>
-
+<!--
         <div class="menu-item">
             <img src="spicy chicken wings.png" alt="ცხარე ქათმის ფრთები">
             <div class="item-info">
@@ -1134,7 +1142,7 @@
                 </div>
             </div>
         </div>
-
+    -->
     </div>
 </div>
 <!--
@@ -1366,6 +1374,23 @@
             }, 200);
         }
     }
+
+    function toggleWinePrice(wineId, glassPrice, bottlePrice) {
+    const priceSpan = document.getElementById(`price-${wineId}`);
+    const btn = event.target; // აჭერილ ღილაკზე წვდომა
+
+    if (priceSpan.innerText.includes(glassPrice)) {
+        // თუ ახლა ჭიქის ფასია, გადავიყვანოთ ბოთლზე
+        priceSpan.innerText = `${bottlePrice} ლარი`;
+        btn.innerText = "ჭიქა";
+        btn.classList.add('bottle-active'); // ვიზუალური სტილისთვის (სურვილისამებრ)
+    } else {
+        // თუ ბოთლის ფასია, დავაბრუნოთ ჭიქაზე
+        priceSpan.innerText = `${glassPrice} ლარი`;
+        btn.innerText = "ბოთლი";
+        btn.classList.remove('bottle-active');
+    }
+}
 </script>
 </body>
 <footer>

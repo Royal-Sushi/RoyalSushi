@@ -16,9 +16,9 @@
     </div>
 
     <ul>
-        <li class="buttons"><a href="index.html">Меню</a></li>
-        <li class="buttons"><a href="aboutus.html">О нас</a></li>
-        <li class="buttons"><a href="tel:+995511232338">Контакты</a></li>
+        <li class="buttons"><a href="index.html">Menu</a></li>
+        <li class="buttons"><a href="aboutus.html">About Us</a></li>
+        <li class="buttons"><a href="tel:+995511232338">Contact Us</a></li>
         
         <li class="buttons dropdown">
     
@@ -118,7 +118,7 @@
             </div>
             <span class="category-name">ЛАПША / РИС</span>
         </div>
--->
+    -->
         <div class="category-card" onclick="toggleMenu('set-menu')">
             <div class="category-image">
                 <img src="set.webp" alt="Сеты">
@@ -132,14 +132,7 @@
             </div>
             <span class="category-name">СУШИ БУРГЕР</span>
         </div>
-<!--
-        <div class="category-card" onclick="toggleMenu ('cocktails-menu')">
-             <div class="category-image">
-                <img src="cocktails.jpg" alt="Коктейли">
-             </div> 
-             <span class="category-name">Коктейли</span>
-        </div>
--->
+
         <div class="category-card" onclick="toggleMenu('wine-menu')">
             <div class="category-image">
                 <img src="wine.jpg" alt="Вино">
@@ -153,14 +146,7 @@
             </div>
             <span class="category-name">БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ</span>
         </div>
-<!--
-        <div class="category-card" onclick="toggleMenu('lemonade-menu')">
-            <div class="category-image">
-                <img src="lemonade.jpg" alt="Лимонады">
-            </div>
-            <span class="category-name">Лимонады</span>
-        </div>
- -->       
+        
         <div class="category-card" onclick="toggleMenu('japanesedrinks-menu')">
             <div class="category-image">
                 <img src="japanese drinks.webp" alt="Японские напитки">
@@ -172,7 +158,7 @@
             <div class="category-image">
                 <img src="coffee.jpg" alt="Кофе">
             </div>
-            <span class="category-name">КОФЕ / Чай</span>
+            <span class="category-name">КОФЕ</span>
         </div>
     </div>
 
@@ -707,36 +693,46 @@
     </div>
 </div>
 
+
 <div id="wine-menu" class="sub-menu-container">
-    <h3>ВИНО</h3>
+    <h3>ღვინო</h3>
     <div class="menu-container">
         
         <div class="menu-item">
-            <img src="tsinandeli.webp" alt="Цинандали">
+            <img src="tsinandeli.webp" alt="ЦИНАНДАЛИ">
             <div class="item-info">
                 <h3>ЦИНАНДАЛИ</h3>
                 <div class="order-container">
-                    <span class="price">7 Лари</span>
+                    <span class="price" id="price-tsinandali">7 Лари</span>
+                    <button class="price" onclick="toggleWinePrice('tsinandali', 7, 40)">
+                        бутылка
+                    </button>
                 </div>
             </div>
         </div>
 
         <div class="menu-item">
-            <img src="mukuzani.webp" alt="Мукузани">
+            <img src="mukuzani.webp" alt="МУКУЗАНИ">
             <div class="item-info">
                 <h3>МУКУЗАНИ</h3>
                 <div class="order-container">
-                    <span class="price">9 Лари</span>
+                    <span class="price" id="price-mukuzani">9 Лари</span>
+                    <button class="price" onclick="toggleWinePrice('mukuzani', 9, 50)">
+                         бутылка
+                    </button>
                 </div>
             </div>
         </div>
 
         <div class="menu-item">
-            <img src="saperavi.webp" alt="Саперави">
+            <img src="saperavi.webp" alt="САПЕРАВИ">
             <div class="item-info">
                 <h3>САПЕРАВИ</h3>
                 <div class="order-container">
-                    <span class="price">8 Лари</span>
+                    <span class="price" id="price-saperavi">8 Лари</span>
+                    <button class="price" onclick="toggleWinePrice('saperavi', 8, 45)">
+                         бутылка
+                    </button>
                 </div>
             </div>
         </div>
@@ -909,7 +905,7 @@
 </div>
 
 <div id="coffee-menu" class="sub-menu-container">
-    <h3>КОФЕ / Чай</h3>
+    <h3>КОФЕ</h3>
     <div class="menu-container">
         
         <div class="menu-item">
@@ -938,39 +934,6 @@
                 <h3>АМЕРИКАНО</h3>
                 <div class="order-container">
                     <span class="price">6 Лари</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="black tea.png" alt="Чёрный чай">
-            <div class="item-info">
-                <h3>Чёрный чай</h3>
-                <p class="description">Классический чёрный чай</p>
-                <div class="order-container">
-                    <span class="price">8 GEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="green tea.png" alt="Зелёный чай">
-            <div class="item-info">
-                <h3>Зелёный чай</h3>
-                <p class="description">Классический зелёный чай</p>
-                <div class="order-container">
-                    <span class="price">8 GEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="fruit tea.png" alt="Фруктовый чай">
-            <div class="item-info">
-                <h3>Фруктовый чай</h3>
-                <p class="description">Ароматный фруктовый чай</p>
-                <div class="order-container">
-                    <span class="price">10 GEL</span>
                 </div>
             </div>
         </div>
@@ -1054,7 +1017,7 @@
 <div id="asiansnack-menu" class="sub-menu-container">
     <h3>АЗИАТСКИЕ ЗАКУСКИ</h3>
     <div class="menu-container">
-        
+        <!--
         <div class="menu-item">
             <img src="salmon tempura.png" alt="Лосось темпура">
             <div class="item-info">
@@ -1065,7 +1028,7 @@
                 </div>
             </div>
         </div>
-
+    -->
         <div class="menu-item">
             <img src="shrimp tempura.png" alt="Креветки темпура">
             <div class="item-info">
@@ -1076,7 +1039,7 @@
                 </div>
             </div>
         </div>
-
+<!--
         <div class="menu-item">
             <img src="shrimp gyoza.png" alt="Гедза с креветкой">
             <div class="item-info">
@@ -1087,7 +1050,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="menu-item">
             <img src="chicken gioza.png" alt="Гедза с курицей">
             <div class="item-info">
@@ -1098,7 +1061,7 @@
                 </div>
             </div>
         </div>
-
+    -->
         <div class="menu-item">
             <img src="hiashi salad.png" alt="Салат Хияши">
             <div class="item-info">
@@ -1120,7 +1083,7 @@
                 </div>
             </div>
         </div>
-
+<!--
         <div class="menu-item">
             <img src="spicy chicken wings.png" alt="Острые куриные крылышки">
             <div class="item-info">
@@ -1131,10 +1094,10 @@
                 </div>
             </div>
         </div>
-
+    -->
     </div>
 </div>
-<!--
+
 <div id="noodles-menu" class="sub-menu-container">
     <h3>ЛАПША И РИС</h3>
     <div class="menu-container">
@@ -1251,99 +1214,6 @@
 
     </div>
 </div>
-
-<div id="cocktails-menulass="sub-menu-container">
-    <h3>Коктейли</h3>
-    <div class="menu-container">
-
-        <div class="menu-item">
-            <img src="blank.png" alt="Жёлтый">
-            <div class="item-info">
-                <h3>Жёлтый</h3>
-                <p class="description">Джин, апельсиновый сок, абрикосовый сироп, Куантро, лайм</p>
-                <div class="order-container">
-                    <span class="price">25 GEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="blank.png" alt="Голубая Маргарита">
-            <div class="item-info">
-                <h3>Голубая Маргарита</h3>
-                <p class="description">Текила, Куантро, лайм</p>
-                <div class="order-container">
-                    <span class="price">25 GEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="blank.png" alt="Апероль Шприц">
-            <div class="item-info">
-                <h3>Апероль Шприц</h3>
-                <p class="description">Апероль, игристое вино, тоник</p>
-                <div class="order-container">
-                    <span class="price">25 GEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="blank.png" alt="Апероль Сауэр">
-            <div class="item-info">
-                <h3>Апероль Сауэр</h3>
-                <p class="description">Апероль, джин, лайм, яичный белок</p>
-                <div class="order-container">
-                    <span class="price">25 GEL</span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div id="lemonade-menu-ru" class="sub-menu-container">
-    <h3>Лимонады</h3>
-    <div class="menu-container">
-
-        <div class="menu-item">
-            <img src="blank.png" alt="Цитрус">
-            <div class="item-info">
-                <h3>Цитрус</h3>
-                <p class="description">Лимон, сахар, вода</p>
-                <div class="order-container">
-                    <span class="price">10 - 40 GEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="blank.png" alt="Киви">
-            <div class="item-info">
-                <h3>Киви</h3>
-                <p class="description">Лимон, клубника, сахар, вода</p>
-                <div class="order-container">
-                    <span class="price">10 - 40 GEL</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="blank.png" alt="Летнее солнце">
-            <div class="item-info">
-                <h3>Летнее солнце</h3>
-                <p class="description">Лимон, манго, сахар, вода</p>
-                <div class="order-container">
-                    <span class="price">10 - 40 GEL</span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
--->
 </section>
 
 <script>
@@ -1364,6 +1234,23 @@
             }, 200);
         }
     }
+
+    function toggleWinePrice(wineId, glassPrice, bottlePrice) {
+    const priceSpan = document.getElementById(`price-${wineId}`);
+    const btn = event.target; // აჭერილ ღილაკზე წვდომა
+
+    if (priceSpan.innerText.includes(glassPrice)) {
+        // თუ ახლა ჭიქის ფასია, გადავიყვანოთ ბოთლზე
+        priceSpan.innerText = `${bottlePrice} Лари`;
+        btn.innerText = "чашка";
+        btn.classList.add('bottle-active'); // ვიზუალური სტილისთვის (სურვილისამებრ)
+    } else {
+        // თუ ბოთლის ფასია, დავაბრუნოთ ჭიქაზე
+        priceSpan.innerText = `${glassPrice} Лари`;
+        btn.innerText = "бутылка";
+        btn.classList.remove('bottle-active');
+    }
+}
 </script>
     
 </body>

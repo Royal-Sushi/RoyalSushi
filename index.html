@@ -171,7 +171,7 @@
             <div class="category-image">
                 <img src="coffee.jpg" alt="coffee">
             </div>
-            <span class="category-name">COFFEE / TEA</span>
+            <span class="category-name">COFFEE</span>
         </div>
         </div>
 
@@ -714,7 +714,10 @@
             <div class="item-info">
                 <h3>TSINANDALI</h3>
                 <div class="order-container">
-                    <span class="price">7 GEL</span>
+                    <span class="price" id="price-tsinandali">7 GEL</span>
+                    <button class="price" onclick="toggleWinePrice('tsinandali', 7, 40)">
+                        Bottle
+                    </button>
                 </div>
             </div>
         </div>
@@ -724,7 +727,10 @@
             <div class="item-info">
                 <h3>MUKUZANI</h3>
                 <div class="order-container">
-                    <span class="price">9 GEL</span>
+                    <span class="price" id="price-mukuzani">9 GEL</span>
+                    <button class="price" onclick="toggleWinePrice('mukuzani', 9, 50)">
+                         Bottle
+                    </button>
                 </div>
             </div>
         </div>
@@ -734,7 +740,10 @@
             <div class="item-info">
                 <h3>SAPERAVI</h3>
                 <div class="order-container">
-                    <span class="price">8 GEL</span>
+                    <span class="price" id="price-saperavi">8 GEL</span>
+                    <button class="price" onclick="toggleWinePrice('saperavi', 8, 45)">
+                         Bottle
+                    </button>
                 </div>
             </div>
         </div>
@@ -907,7 +916,7 @@
 </div>
 
 <div id="coffee-menu" class="sub-menu-container">
-    <h3>COFFEE / TEA</h3>
+    <h3>COFFEE</h3>
     <div class="menu-container">
         
         <div class="menu-item">
@@ -939,7 +948,7 @@
                 </div>
             </div>
         </div>
-
+<!--
         <div class="menu-item">
             <img src="black tea.png" alt="Black Tea">
             <div class="item-info">
@@ -972,7 +981,7 @@
                 </div>
             </div>
         </div>
-
+-->
     </div>
 </div>
 
@@ -1052,7 +1061,7 @@
 <div id="asiansnack-menu" class="sub-menu-container">
     <h3>ASIAN SNACK</h3>
     <div class="menu-container">
-        
+ <!--       
         <div class="menu-item">
             <img src="salmon tempura.png" alt="Salmon tempura">
             <div class="item-info">
@@ -1063,7 +1072,7 @@
                 </div>
             </div>
         </div>
-
+-->
         <div class="menu-item">
             <img src="shrimp tempura.png" alt="Shrimp tempura">
             <div class="item-info">
@@ -1074,7 +1083,7 @@
                 </div>
             </div>
         </div>
-
+<!--
         <div class="menu-item">
             <img src="shrimp gyoza.png" alt="Shrimp gyoza">
             <div class="item-info">
@@ -1096,7 +1105,7 @@
                 </div>
             </div>
         </div>
-
+    -->
         <div class="menu-item">
             <img src="hiashi salad.png" alt="Hiashi salad">
             <div class="item-info">
@@ -1118,7 +1127,7 @@
                 </div>
             </div>
         </div>
-
+<!--
         <div class="menu-item">
             <img src="spicy chicken wings.png" alt="Spicy chicken wings">
             <div class="item-info">
@@ -1129,7 +1138,7 @@
                 </div>
             </div>
         </div>
-
+    -->
     </div>
 </div>
 <!-- 
@@ -1360,6 +1369,23 @@
             }, 200);
         }
     }
+
+    function toggleWinePrice(wineId, glassPrice, bottlePrice) {
+    const priceSpan = document.getElementById(`price-${wineId}`);
+    const btn = event.target; // აჭერილ ღილაკზე წვდომა
+
+    if (priceSpan.innerText.includes(glassPrice)) {
+        // თუ ახლა ჭიქის ფასია, გადავიყვანოთ ბოთლზე
+        priceSpan.innerText = `${bottlePrice} GEL`;
+        btn.innerText = "Glass";
+        btn.classList.add('bottle-active'); // ვიზუალური სტილისთვის (სურვილისამებრ)
+    } else {
+        // თუ ბოთლის ფასია, დავაბრუნოთ ჭიქაზე
+        priceSpan.innerText = `${glassPrice} GEL`;
+        btn.innerText = "Bottle";
+        btn.classList.remove('bottle-active');
+    }
+}
 </script>
         
     </body>
