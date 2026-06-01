@@ -412,6 +412,8 @@ footer {
         gap: 20px !important;
         width: 100% !important;
         box-sizing: border-box !important;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
     }
 
