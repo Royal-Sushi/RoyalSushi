@@ -412,6 +412,7 @@ footer {
         gap: 20px !important;
         width: 100% !important;
         box-sizing: border-box !important;
+        justify-content: space-evenly;
     }
 
     .menu-item {
@@ -582,3 +583,4 @@ footer {
     opacity: 1 !important;
     visibility: visible !important;
 }
+
