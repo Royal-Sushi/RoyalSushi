@@ -241,7 +241,7 @@ li  {
 
 /* ფასის სტილის კორექტირება (მარჟინის მოცილება) */
 .price {
-    margin: 0;                 /* მოაცილე ზედმეტი დაშორებები */
+    margin-left: 2px;                 /* მოაცილე ზედმეტი დაშორებები */
     background-color: #660000;
     color: white;
     padding: 5px 15px;
@@ -589,9 +589,11 @@ footer {
 
 .price {
     display: block;
-    font-size: 11px;         /* აქედან მართავ ზომას (11 პიქსელი საკმაოდ პატარაა) */
+    font-size: 16px;
+    font-weight: bold;         /* აქედან მართავ ზომას (11 პიქსელი საკმაოდ პატარაა) */
     color: rgb(255, 255, 255);          /* ღია ნაცრისფერი */
     margin-top: 2px;
     margin-bottom: 4px;
-    font-weight: normal;     /* შრიფტი იქნება თხელი და არა მუქი */
+    font-weight: normal;
+    margin-left: 1px ;     /* შრიფტი იქნება თხელი და არა მუქი */
 }
