@@ -594,6 +594,8 @@ footer {
     color: rgb(255, 255, 255);          /* ღია ნაცრისფერი */
     margin-top: 2px;
     margin-bottom: 4px;
-    font-weight: normal;
-    margin-left: 1px ;     /* შრიფტი იქნება თხელი და არა მუქი */
+    box-sizing: border-box;
+    gap: 1px;
+
 }
+
